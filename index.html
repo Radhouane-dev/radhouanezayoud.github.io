@@ -1,21 +1,4 @@
 
-bash
-
-cat << 'PYEOF' > /home/claude/build_portfolio.py
-import base64, os
-
-def read_b64(path):
-    with open(path) as f:
-        return f.read().strip()
-
-def read_img(num):
-    path = f"/home/claude/img{num}.jpeg"
-    with open(path,"rb") as f:
-        return "data:image/jpeg;base64," + base64.b64encode(f.read()).decode()
-
-imgs = {f"I{i}": read_img(i) for i in range(1,11)}
-cv_b64 = "data:application/pdf;base64," + read_b64("/home/claude/cv.b64")
-
 HTML = r"""<!DOCTYPE html>
 <html lang="fr" id="html-root">
 <head>
