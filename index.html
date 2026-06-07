@@ -1405,22 +1405,3 @@ setLang('fr');
 </script>
 </body>
 </html>"""
-
-# Inject all images
-for i in range(1, 11):
-    html = html.replace(f'%%I{i}%%', imgs[f'img{i}'])
-
-# Inject CV
-html = html.replace('%%CV%%', cv_b64)
-
-with open('/mnt/user-data/outputs/radhouane-zayoud-ULTRA-portfolio.html', 'w', encoding='utf-8') as f:
-    f.write(html)
-
-size = len(html)
-print(f"✅ Portfolio ULTRA généré: {size//1024} KB ({size//1048576:.1f} MB)")
-PYEOF
-
-python3 /home/claude/build_portfolio.py
-Sortie
-
-Command argument is 105_901 bytes, exceeding the 100_000-byte per-argument limit. For large content, pipe via stdin or use a file-write API instead of embedding the content inline in the command. Argument preview: 'cat << \'PYEOF\' > /home/claude/build_portfolio.py\nimport base64, os\n\ndef read_b64(path):\n    with open(path) as f:\n        return f.read().strip()\n\ndef read_img(num):\n    path = f"/home/claude/img{num}'
