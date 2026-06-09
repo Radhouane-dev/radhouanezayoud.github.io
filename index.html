@@ -1,489 +1,2044 @@
-HEAD = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr" id="root">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Radhouane Zayoud | Chef de Projets Photovoltaïques | Solar PV Engineer</title>
-<meta name="description" content="Radhouane Zayoud – Photovoltaic Project Engineer. 4+ ans d'expérience. Projets jusqu'à 10 MW. PVSyst, AutoCAD, BESS. Diplôme reconnu France (ENIC-NARIC) & Allemagne (ZAB).">
-<meta name="keywords" content="Radhouane Zayoud, Chef de Projets Photovoltaïques, Solar PV Project Manager, PVSyst, BESS, Renewable Energy Tunisia, MLS Energies, Jugurtha Études">
+<title>Radhouane Zayoud | Chef de Projets Photovoltaïques | Solar PV Engineer | Utility-Scale Expert</title>
+<meta name="description" content="Radhouane Zayoud – Ingénieur PV Utility-Scale. 4+ ans, projets 10 MW. PVSyst, AutoCAD, BESS, MV/LV. Diplôme ENIG (Très Bien), reconnu France ENIC-NARIC & Allemagne ZAB. Disponible FR/EU/Afrique.">
+<meta name="keywords" content="Radhouane Zayoud, Chef Projets PV, Solar Project Manager, PVSyst, BESS, Utility-Scale, MV/LV, Renewable Energy, Énergie Renouvelable, Ingénieur Photovoltaïque, Centrale Solaire, Djerba, Tunisie, France, Europe, Afrique, EPC Manager">
 <meta name="author" content="Radhouane Zayoud">
 <meta name="robots" content="index,follow">
-<meta property="og:title" content="Radhouane Zayoud | Solar PV Project Manager">
-<meta property="og:description" content="4+ years · 10 MW projects · PVSyst · BESS · Available Europe & Africa">
+<meta property="og:title" content="Radhouane Zayoud | Ingénieur PV Utility-Scale | 4+ ans | 10 MW">
+<meta property="og:description" content="Expert en projets solaires 50kWp–10MW. PVSyst, BESS, MV/LV design, EPC management. Diplômé ENIG. Disponible France, Allemagne, Europe, Afrique.">
+<meta property="og:type" content="website">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Radhouane Zayoud","jobTitle":"Photovoltaic Project Engineer","telephone":"+21623781661","email":"zayoudradhouane@gmail.com","url":"https://radhouanezayoud.github.io","sameAs":["https://linkedin.com/in/radhouane-zayoud"]}
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Radhouane Zayoud",
+  "jobTitle": "Photovoltaic Project Engineer | Solar Project Manager",
+  "telephone": "+21623781661",
+  "email": "zayoudradhouane@gmail.com",
+  "url": "https://radhouanezayoud.github.io",
+  "sameAs": ["https://linkedin.com/in/radhouane-zayoud"],
+  "workLocation": [
+    {"@type": "City", "name": "Tunis, Tunisia"},
+    {"@type": "Country", "name": "France"},
+    {"@type": "Country", "name": "Germany"},
+    {"@type": "Country", "name": "Africa"}
+  ],
+  "skills": ["PVSyst", "AutoCAD", "BESS", "MV/LV Design", "Solar Project Management", "EPC Management", "SketchUp", "PV Engineering", "Utility-Scale PV"]
+}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#030c18;--ink2:#071522;--ink3:#0c2040;
-  --blue:#1255a4;--sky:#0ea5e9;--teal:#00c9a7;--lime:#22d3a0;
-  --amber:#f59e0b;--snow:#e8f1ff;--slate:#7a9cc4;
-  --ghost:rgba(14,165,233,.08);--rim:rgba(14,165,233,.15);
-  --gb:linear-gradient(135deg,#1255a4,#0ea5e9);
-  --gt:linear-gradient(135deg,#0ea5e9,#00c9a7);
-  --gh:linear-gradient(135deg,#1255a4,#0ea5e9,#00c9a7);
-  --gc:linear-gradient(145deg,#071522,#0c2040);
-  --ease:cubic-bezier(.16,1,.3,1);
+:root {
+  --ink: #030c18;
+  --ink2: #071522;
+  --ink3: #0c2040;
+  --teal: #00c9a7;
+  --lime: #22d3a0;
+  --slate: #7a9cc4;
+  --amber: #f59e0b;
+  --snow: #e8f1ff;
+  --accent: #10b981;
+  --ghost: rgba(16, 185, 129, 0.08);
+  --rim: rgba(16, 185, 129, 0.15);
+  --gb: linear-gradient(135deg, #10b981, #00c9a7);
+  --gt: linear-gradient(135deg, #00c9a7, #22d3a0);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-body{font-family:'Sora',sans-serif;background:var(--ink);color:var(--snow);overflow-x:hidden;line-height:1.65}
-/* BG */
-.bg-dots{position:fixed;inset:0;background-image:radial-gradient(rgba(14,165,233,.05) 1px,transparent 1px);background-size:28px 28px;z-index:0;pointer-events:none}
-.bg-grid{position:fixed;inset:0;background-image:linear-gradient(rgba(14,165,233,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(14,165,233,.025) 1px,transparent 1px);background-size:72px 72px;z-index:0;pointer-events:none}
-.orb{position:fixed;border-radius:50%;filter:blur(100px);pointer-events:none;z-index:0}
-.o1{width:700px;height:700px;background:radial-gradient(circle,rgba(18,85,164,.18),transparent 70%);top:-250px;left:-250px;animation:obf 22s ease-in-out infinite alternate}
-.o2{width:600px;height:600px;background:radial-gradient(circle,rgba(0,201,167,.09),transparent 70%);bottom:-200px;right:-200px;animation:obf 28s ease-in-out infinite alternate;animation-delay:-12s}
-.o3{width:450px;height:450px;background:radial-gradient(circle,rgba(14,165,233,.1),transparent 70%);top:40%;right:15%;animation:obf 20s ease-in-out infinite alternate;animation-delay:-7s}
-@keyframes obf{0%{transform:translate(0,0) scale(1)}100%{transform:translate(55px,40px) scale(1.12)}}
-/* NAV */
-#nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:66px;padding:0 clamp(16px,5%,72px);display:flex;align-items:center;justify-content:space-between;transition:all .4s var(--ease)}
-#nav.on{background:rgba(3,12,24,.95);backdrop-filter:blur(22px);border-bottom:1px solid var(--rim);box-shadow:0 4px 30px rgba(0,0,0,.4)}
-.nlogo{font-size:.95rem;font-weight:900;letter-spacing:.02em;text-decoration:none;color:var(--snow)}
-.nlogo em{font-style:normal;background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.nlinks{display:flex;gap:1.5rem;list-style:none}
-.nlinks a{color:var(--slate);text-decoration:none;font-size:.74rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;transition:color .25s;position:relative}
-.nlinks a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1.5px;background:var(--gt);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
-.nlinks a:hover{color:var(--snow)}
-.nlinks a:hover::after{transform:scaleX(1)}
-.navr{display:flex;align-items:center;gap:10px}
-.lt{display:flex;background:rgba(14,165,233,.07);border:1px solid var(--rim);border-radius:100px;padding:2px;overflow:hidden}
-.lb{padding:4px 11px;border:none;background:transparent;color:var(--slate);font-family:'Sora',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.12em;cursor:pointer;border-radius:100px;transition:all .25s}
-.lb.on{background:var(--gt);color:var(--ink);font-weight:800}
-.hbtn{display:none;flex-direction:column;gap:4px;cursor:pointer;background:none;border:none;padding:4px}
-.hbtn span{display:block;width:20px;height:2px;background:var(--snow);border-radius:2px;transition:all .3s}
-.mob{display:none;position:fixed;top:66px;left:0;right:0;background:rgba(3,12,24,.97);backdrop-filter:blur(22px);border-bottom:1px solid var(--rim);padding:18px clamp(16px,5%,72px);z-index:999;flex-direction:column;gap:4px}
-.mob.open{display:flex}
-.mob a{color:var(--slate);text-decoration:none;font-size:.88rem;font-weight:500;padding:9px 12px;border-radius:7px;transition:all .2s}
-.mob a:hover{color:var(--snow);background:var(--ghost)}
-/* SECTIONS */
-section{position:relative;z-index:1;padding:clamp(68px,8vw,108px) clamp(16px,5%,72px)}
-.W{max-width:1160px;margin:0 auto}
-.chip{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sky);margin-bottom:14px}
-.chip::before{content:'';width:22px;height:1.5px;background:var(--gt)}
-h2.T{font-size:clamp(1.8rem,3.5vw,2.75rem);font-weight:900;line-height:1.07;letter-spacing:-.03em;margin-bottom:18px}
-h2.T span,h2.T em{color:var(--sky);font-style:normal}
-.Sub{font-size:.93rem;color:var(--slate);max-width:560px;line-height:1.78}
-/* BUTTONS */
-.B{display:inline-flex;align-items:center;gap:7px;padding:12px 22px;border-radius:8px;font-weight:700;font-size:.82rem;letter-spacing:.04em;text-decoration:none;border:none;cursor:pointer;font-family:'Sora',sans-serif;transition:all .3s var(--ease)}
-.Bp{background:var(--gb);color:#fff}
-.Bp:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(14,165,233,.28)}
-.Bs{background:transparent;color:var(--snow);border:1px solid var(--rim)}
-.Bs:hover{background:var(--ghost);border-color:var(--sky);transform:translateY(-2px)}
-.Bg{background:var(--gt);color:var(--ink);font-weight:800}
-.Bg:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,201,167,.28)}
-/* REVEAL */
-.R{opacity:0;transform:translateY(20px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
-.R.v{opacity:1;transform:none}
-.Rx{opacity:0;transform:translateX(-16px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
-.Rx.v{opacity:1;transform:none}
-/* HERO */
-#hero{min-height:100vh;display:flex;align-items:center;padding-top:66px;overflow:hidden}
-.hg{display:grid;grid-template-columns:1.1fr 1fr;gap:3.5rem;align-items:center}
-.h-av{display:inline-flex;align-items:center;gap:8px;background:rgba(0,201,167,.07);border:1px solid rgba(0,201,167,.2);border-radius:100px;padding:6px 16px;font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:22px;animation:fup .6s var(--ease) both}
-.h-av::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--teal);animation:pulse 2.4s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.6)}}
-.hname{font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:900;line-height:.94;letter-spacing:-.04em;margin-bottom:10px;animation:fup .7s var(--ease) .1s both}
-.hname em{font-style:normal;display:block;background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hrole{font-size:clamp(.87rem,1.5vw,1.05rem);color:var(--slate);margin-bottom:26px;animation:fup .7s var(--ease) .2s both;line-height:1.55}
-.hrole strong{color:var(--snow);font-weight:600}
-.hdesc{font-size:.89rem;color:var(--slate);line-height:1.85;max-width:490px;margin-bottom:34px;animation:fup .7s var(--ease) .3s both}
-.hdesc strong{color:var(--snow)}
-.hact{display:flex;gap:12px;flex-wrap:wrap;animation:fup .7s var(--ease) .4s both}
-.hstats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:42px;padding-top:34px;border-top:1px solid var(--rim);animation:fup .7s var(--ease) .5s both}
-.hs{padding:0 18px 0 0;border-right:1px solid var(--rim)}
-.hs:last-child{border-right:none}
-.hs-n{font-size:1.85rem;font-weight:900;background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
-.hs-l{font-size:.62rem;color:var(--slate);text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
-@keyframes fup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-/* HERO GALLERY – images embed directly */
-.hgal{position:relative;animation:fup .9s var(--ease) .15s both}
-.hgal-main{border-radius:20px;overflow:hidden;position:relative;height:360px;box-shadow:0 28px 70px rgba(0,0,0,.5)}
-.hgal-main img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s var(--ease)}
-.hgal-main:hover img{transform:scale(1.04)}
-.hgal-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(3,12,24,.82) 0%,rgba(3,12,24,.1) 55%,transparent);pointer-events:none}
-.hgal-lbl{position:absolute;bottom:16px;left:18px;right:18px}
-.hgal-lbl-t{font-size:.68rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--teal);margin-bottom:4px}
-.hgal-lbl-s{font-size:.96rem;font-weight:700}
-.hgal-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:7px}
-.hgt{border-radius:12px;overflow:hidden;height:96px;position:relative;cursor:pointer;transition:transform .3s}
-.hgt:hover{transform:scale(1.04)}
-.hgt img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s var(--ease)}
-.hgt:hover img{transform:scale(1.08)}
-.hgt-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(3,12,24,.5),transparent)}
-/* floating badges */
-.fb{position:absolute;backdrop-filter:blur(12px);border-radius:12px;padding:8px 13px;font-size:.7rem;font-weight:700;border:1px solid var(--rim);background:rgba(7,21,34,.88);z-index:10;animation:flt 5s ease-in-out infinite alternate}
-.fb1{top:-12px;right:-12px;color:var(--teal)}
-.fb2{bottom:106px;left:-14px;color:var(--sky)}
-@keyframes flt{0%{transform:translateY(0)}100%{transform:translateY(-9px)}}
-/* ABOUT */
-#about{background:linear-gradient(180deg,transparent,rgba(18,85,164,.04),transparent)}
-.ag{display:grid;grid-template-columns:1fr 1.6fr;gap:4.5rem;align-items:start}
-.port{position:relative}
-.port-frame{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--rim)}
-.port-frame img{width:100%;aspect-ratio:.82;object-fit:cover;object-position:top center;display:block}
-.port-frame::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(to top,rgba(3,12,24,.6),transparent);pointer-events:none}
-.port-badge{position:absolute;bottom:-14px;right:-14px;background:var(--gb);border-radius:12px;padding:13px 17px;text-align:center;box-shadow:0 10px 35px rgba(14,165,233,.28)}
-.port-badge-n{font-size:1.5rem;font-weight:900}
-.port-badge-l{font-size:.58rem;color:rgba(255,255,255,.8);letter-spacing:.08em;text-transform:uppercase}
-.port-pills{display:flex;gap:7px;margin-top:22px;flex-wrap:wrap}
-.pill{display:flex;align-items:center;gap:5px;background:var(--ghost);border:1px solid var(--rim);border-radius:100px;padding:4px 11px;font-size:.66rem;font-weight:700;color:var(--sky)}
-.atxt p{color:var(--slate);line-height:1.85;margin-bottom:13px}
-.atxt p strong{color:var(--snow)}
-.ahi{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:22px}
-.ai{display:flex;align-items:flex-start;gap:9px;background:var(--ghost);border:1px solid var(--rim);border-radius:8px;padding:12px;transition:all .3s}
-.ai:hover{border-color:rgba(14,165,233,.28);background:rgba(14,165,233,.06)}
-.ai-ic{width:30px;height:30px;border-radius:6px;background:var(--gb);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
-.ai-t{font-size:.76rem;color:var(--slate);line-height:1.45}
-.ai-t strong{display:block;color:var(--snow);font-size:.8rem;margin-bottom:1px}
-/* TIMELINE */
-.tl{position:relative;margin-top:48px;padding-left:30px}
-.tl::before{content:'';position:absolute;left:0;top:8px;bottom:0;width:2px;background:linear-gradient(180deg,var(--sky),var(--teal),rgba(0,201,167,.1))}
-.tle{position:relative;margin-bottom:38px}
-.tle-dot{position:absolute;left:-37px;top:8px;width:13px;height:13px;border-radius:50%;border:2px solid var(--ink)}
-.tle-dot.c{background:var(--teal);box-shadow:0 0 0 4px rgba(0,201,167,.18),0 0 18px rgba(0,201,167,.28)}
-.tle-dot.o{background:var(--sky);box-shadow:0 0 0 3px rgba(14,165,233,.18)}
-.tle-dot.x{background:var(--slate);box-shadow:0 0 0 3px rgba(122,156,196,.15)}
-.tlc{background:var(--gc);border:1px solid var(--rim);border-radius:14px;padding:22px 26px;transition:all .3s}
-.tlc:hover{border-color:rgba(14,165,233,.28);transform:translateX(4px)}
-.tlt{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:7px;margin-bottom:13px}
-.tl-role{font-size:.98rem;font-weight:800}
-.tl-co{font-size:.78rem;color:var(--sky);font-weight:600;margin-top:3px}
-.tl-per{font-size:.67rem;font-family:'DM Mono',monospace;color:var(--slate);background:var(--ghost);border:1px solid var(--rim);padding:3px 10px;border-radius:100px;white-space:nowrap;flex-shrink:0}
-.tl-ul{list-style:none;display:flex;flex-direction:column;gap:6px}
-.tl-ul li{font-size:.82rem;color:var(--slate);padding-left:13px;position:relative;line-height:1.6}
-.tl-ul li::before{content:'▸';position:absolute;left:0;color:var(--teal);font-size:.63rem;top:3px}
-.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
-.tag{font-size:.63rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:2px 8px;border-radius:100px;background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.16);color:var(--sky)}
-.tag.g{background:rgba(0,201,167,.07);border-color:rgba(0,201,167,.16);color:var(--teal)}
-.tag.a{background:rgba(245,158,11,.07);border-color:rgba(245,158,11,.16);color:var(--amber)}
-/* PROJECTS */
-#projects{background:linear-gradient(180deg,transparent,rgba(18,85,164,.04),transparent)}
-.pflag{background:var(--gc);border:1px solid var(--rim);border-radius:18px;overflow:hidden;margin-top:44px;display:grid;grid-template-columns:1fr 1fr;min-height:360px}
-.pflag-img{position:relative;overflow:hidden}
-.pflag-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease)}
-.pflag:hover .pflag-img img{transform:scale(1.04)}
-.pflag-ov{position:absolute;inset:0;background:linear-gradient(90deg,transparent 40%,var(--ink) 90%);pointer-events:none}
-.pflag-body{padding:32px 34px 32px 26px;display:flex;flex-direction:column;justify-content:center}
-.pflag-star{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
-.pflag-mw{font-size:3.2rem;font-weight:900;background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:4px}
-.pflag-u{font-size:.8rem;color:var(--slate);margin-bottom:16px}
-.pflag-t{font-size:1.15rem;font-weight:800;margin-bottom:7px}
-.pflag-l{font-size:.78rem;color:var(--sky);font-weight:600;margin-bottom:16px}
-.pflag-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
-.pk{background:rgba(14,165,233,.06);border:1px solid var(--rim);border-radius:8px;padding:10px;text-align:center}
-.pk-v{font-family:'DM Mono',monospace;font-size:.92rem;font-weight:500;color:var(--teal)}
-.pk-l{font-size:.58rem;color:var(--slate);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
-.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(295px,1fr));gap:16px;margin-top:16px}
-.pc{background:var(--gc);border:1px solid var(--rim);border-radius:14px;overflow:hidden;transition:all .4s var(--ease)}
-.pc:hover{border-color:rgba(14,165,233,.33);transform:translateY(-5px);box-shadow:0 18px 45px rgba(0,0,0,.33)}
-.pc-img{height:165px;position:relative;overflow:hidden}
-.pc-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s var(--ease)}
-.pc:hover .pc-img img{transform:scale(1.07)}
-.pc-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(3,12,24,.88) 0%,rgba(3,12,24,.1) 55%,transparent);pointer-events:none}
-.pc-badge{position:absolute;top:9px;left:9px;background:rgba(3,12,24,.78);border:1px solid var(--rim);backdrop-filter:blur(7px);border-radius:100px;padding:3px 9px;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sky)}
-.pc-mw{position:absolute;top:9px;right:11px;text-align:right}
-.pc-mw-v{font-family:'DM Mono',monospace;font-size:1.35rem;font-weight:500;color:var(--teal)}
-.pc-mw-l{font-size:.56rem;color:var(--slate)}
-.pc-name{position:absolute;bottom:9px;left:11px;right:11px;font-size:.86rem;font-weight:700;line-height:1.25}
-.pc-body{padding:14px 16px}
-.pc-meta{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:11px}
-.pcm{font-size:.7rem;color:var(--slate)}
-.pcm strong{display:block;color:var(--snow);font-size:.76rem;margin-bottom:1px}
-.pckpis{display:flex;gap:6px}
-.kp{flex:1;background:var(--ghost);border:1px solid var(--rim);border-radius:7px;padding:7px;text-align:center}
-.kp-v{font-family:'DM Mono',monospace;font-size:.82rem;font-weight:500;color:var(--sky)}
-.kp-l{font-size:.56rem;color:var(--slate);text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
-/* GALLERY */
-#gallery{background:linear-gradient(180deg,transparent,rgba(14,165,233,.03),transparent)}
-.gmosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:195px;gap:5px;margin-top:44px;border-radius:18px;overflow:hidden}
-.gm{position:relative;overflow:hidden;cursor:pointer}
-.gm img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s var(--ease)}
-.gm:hover img{transform:scale(1.08)}
-.gm-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(3,12,24,.78),transparent 55%);opacity:0;transition:opacity .3s}
-.gm:hover .gm-ov{opacity:1}
-.gm-info{position:absolute;bottom:11px;left:12px;right:12px;opacity:0;transform:translateY(5px);transition:all .3s}
-.gm:hover .gm-info{opacity:1;transform:none}
-.gm-t{font-size:.75rem;font-weight:700}
-.gm-s{font-size:.64rem;color:var(--teal);margin-top:2px}
-.gm-n{position:absolute;top:9px;right:9px;background:rgba(3,12,24,.72);border:1px solid var(--rim);border-radius:5px;padding:2px 7px;font-size:.62rem;font-family:'DM Mono',monospace;color:var(--sky);backdrop-filter:blur(5px)}
-/* grid positions */
-.gm:nth-child(1){grid-column:span 8;grid-row:span 2}
-.gm:nth-child(2){grid-column:span 4}
-.gm:nth-child(3){grid-column:span 4}
-.gm:nth-child(4){grid-column:span 3}
-.gm:nth-child(5){grid-column:span 3}
-.gm:nth-child(6){grid-column:span 3}
-.gm:nth-child(7){grid-column:span 3}
-.gm:nth-child(8){grid-column:span 4}
-.gm:nth-child(9){grid-column:span 4}
-.gm:nth-child(10){grid-column:span 4}
-/* LIGHTBOX */
-#lb{position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:9999;display:none;align-items:center;justify-content:center;backdrop-filter:blur(10px)}
-#lb.open{display:flex}
-#lb-img{max-width:88vw;max-height:88vh;border-radius:14px;object-fit:contain;box-shadow:0 40px 100px rgba(0,0,0,.8)}
-.lb-x{position:absolute;top:17px;right:20px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:white;font-size:1rem;cursor:pointer;border-radius:7px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.lb-x:hover{background:rgba(255,255,255,.15)}
-.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:white;border-radius:50%;width:46px;height:46px;font-size:1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s;backdrop-filter:blur(7px)}
-.lb-nav:hover{background:rgba(14,165,233,.18);border-color:var(--sky)}
-.lb-p{left:15px}.lb-n{right:15px}
-.lb-cap{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);background:rgba(3,12,24,.82);border:1px solid var(--rim);border-radius:12px;padding:8px 16px;font-size:.78rem;color:var(--snow);text-align:center;backdrop-filter:blur(9px);white-space:nowrap;max-width:88vw}
-.lb-cnt{position:absolute;top:17px;left:20px;background:rgba(3,12,24,.72);border:1px solid var(--rim);border-radius:7px;padding:3px 10px;font-size:.68rem;font-family:'DM Mono',monospace;color:var(--slate);backdrop-filter:blur(7px)}
-/* SKILLS */
-.skw{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;margin-top:46px}
-.sk-h{font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--sky);margin-bottom:20px;padding-bottom:9px;border-bottom:1px solid var(--rim);display:flex;align-items:center;gap:7px}
-.skr{margin-bottom:15px}
-.skt{display:flex;justify-content:space-between;margin-bottom:5px}
-.skn{font-size:.82rem;font-weight:500}
-.skp{font-family:'DM Mono',monospace;font-size:.74rem;color:var(--sky)}
-.skbar{height:4px;background:rgba(255,255,255,.05);border-radius:100px;overflow:hidden}
-.skfill{height:100%;border-radius:100px;width:0;transition:width 1.8s var(--ease)}
-.fb{background:linear-gradient(90deg,var(--blue),var(--sky))}
-.fg{background:linear-gradient(90deg,var(--sky),var(--teal))}
-.fa{background:linear-gradient(90deg,var(--teal),var(--lime))}
-.tg2{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
-.tc{display:flex;align-items:center;gap:7px;background:var(--ghost);border:1px solid var(--rim);border-radius:8px;padding:9px 11px;transition:all .3s}
-.tc:hover{border-color:rgba(14,165,233,.28);transform:translateY(-2px)}
-.tc-i{font-size:1.05rem}
-.tc-n{font-size:.73rem;font-weight:600}
-.certs{display:flex;flex-direction:column;gap:9px;margin-top:16px}
-.ci{display:flex;align-items:flex-start;gap:11px;background:var(--ghost);border:1px solid var(--rim);border-radius:8px;padding:12px}
-.ci-y{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--slate);white-space:nowrap;padding-top:2px;min-width:34px}
-.ci-t{font-size:.78rem;color:var(--slate);line-height:1.5}
-.ci-t strong{color:var(--snow);display:block;margin-bottom:2px}
-/* EDUCATION */
-#education{background:linear-gradient(180deg,transparent,rgba(18,85,164,.04),transparent)}
-.edug{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:46px}
-.ec{background:var(--gc);border:1px solid var(--rim);border-radius:14px;padding:22px 24px;display:flex;gap:14px;transition:all .3s}
-.ec:hover{border-color:rgba(14,165,233,.28);transform:translateY(-3px);box-shadow:0 10px 35px rgba(0,0,0,.28)}
-.ec-ic{width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
-.eib{background:var(--gb)}.eig{background:var(--gt)}
-.ec-deg{font-size:.88rem;font-weight:800;line-height:1.3;margin-bottom:4px}
-.ec-sch{font-size:.76rem;color:var(--sky);font-weight:600;margin-bottom:3px}
-.ec-yr{font-size:.66rem;font-family:'DM Mono',monospace;color:var(--slate)}
-.ec-hon{display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.2);color:var(--amber);border-radius:100px;padding:2px 7px;margin-top:5px}
-/* Recognition */
-.recog{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;grid-column:span 2}
-.rc{background:var(--gc);border:1px solid var(--rim);border-radius:14px;padding:20px;display:flex;align-items:center;gap:13px;transition:all .3s}
-.rc:hover{border-color:rgba(14,165,233,.28);transform:translateY(-2px)}
-.rc-flag{font-size:1.9rem}
-.rc-t{font-size:.86rem;font-weight:800;margin-bottom:3px}
-.rc-s{font-size:.74rem;color:var(--sky);font-weight:600;margin-bottom:3px}
-.rc-b{font-size:.74rem;color:var(--slate)}
-/* CV SECTION */
-#cv{background:linear-gradient(180deg,transparent,rgba(14,165,233,.04),transparent)}
-.cvw{display:grid;grid-template-columns:1.2fr 1fr;gap:3.5rem;align-items:start;margin-top:46px}
-.cvf{background:var(--gc);border:1px solid var(--rim);border-radius:18px;overflow:hidden;box-shadow:0 22px 70px rgba(0,0,0,.45)}
-.cvf-hd{background:rgba(14,165,233,.07);border-bottom:1px solid var(--rim);padding:13px 18px;display:flex;align-items:center;gap:7px}
-.cvf-dots{display:flex;gap:5px}
-.cd{width:9px;height:9px;border-radius:50%}
-.cd1{background:#ff5f57}.cd2{background:#febc2e}.cd3{background:#28c840}
-.cvf-bar{flex:1;background:rgba(255,255,255,.04);border:1px solid var(--rim);border-radius:4px;padding:3px 10px;font-size:.68rem;font-family:'DM Mono',monospace;color:var(--slate)}
-.cvf-body{padding:18px}
-.cvhl{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px}
-.cvh{background:var(--ghost);border:1px solid var(--rim);border-radius:8px;padding:11px;display:flex;align-items:center;gap:7px}
-.cvh-i{font-size:1.1rem}
-.cvh-t{font-size:.73rem;color:var(--slate)}
-.cvh-t strong{display:block;color:var(--snow);font-size:.76rem;margin-bottom:1px}
-.cv-note{background:rgba(0,201,167,.05);border:1px solid rgba(0,201,167,.12);border-radius:8px;padding:13px;font-size:.76rem;color:var(--slate);line-height:1.65;margin-top:18px}
-.cv-note strong{color:var(--teal);display:block;margin-bottom:4px}
-.up-zone{border:2px dashed var(--rim);border-radius:12px;padding:24px;text-align:center;cursor:pointer;transition:all .3s;margin-top:14px}
-.up-zone:hover,.up-zone.drag{border-color:var(--sky);background:rgba(14,165,233,.04)}
-.up-zone input{display:none}
-.up-ico{font-size:2rem;margin-bottom:7px}
-.up-txt{font-size:.82rem;color:var(--slate);margin-bottom:4px}
-.up-hint{font-size:.68rem;color:rgba(122,156,196,.45)}
-.cv-cur{background:rgba(14,165,233,.06);border:1px solid var(--rim);border-radius:8px;padding:11px 14px;display:flex;align-items:center;gap:10px;margin-top:10px}
-.cv-fn{font-size:.78rem;font-weight:700;color:var(--sky)}
-.cv-fs{font-size:.66rem;color:var(--slate)}
-.cv-del{background:none;border:none;color:var(--slate);cursor:pointer;font-size:.83rem;margin-left:auto;transition:color .2s}
-.cv-del:hover{color:#f87171}
-/* TESTIMONIALS */
-.testg{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:16px;margin-top:46px}
-.tc2{background:var(--gc);border:1px solid var(--rim);border-radius:14px;padding:22px;position:relative;transition:all .3s}
-.tc2:hover{border-color:rgba(14,165,233,.26);transform:translateY(-3px)}
-.tc2::before{content:'"';position:absolute;top:13px;left:19px;font-size:3rem;font-family:Georgia,serif;color:var(--sky);opacity:.2;line-height:1}
-.tc2-txt{font-size:.83rem;color:var(--slate);line-height:1.8;margin-top:11px;font-style:italic}
-.tc2-auth{display:flex;align-items:center;gap:9px;margin-top:16px;padding-top:13px;border-top:1px solid var(--rim)}
-.tc2-av{width:34px;height:34px;border-radius:50%;background:var(--gb);display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:800;flex-shrink:0}
-.tc2-name{font-size:.8rem;font-weight:700}
-.tc2-role{font-size:.68rem;color:var(--slate);margin-top:1px}
-.ph{font-size:.68rem;color:rgba(245,158,11,.45);margin-top:7px}
-/* CONTACT */
-#contact{background:linear-gradient(180deg,transparent,rgba(18,85,164,.06),transparent)}
-.ctg{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;margin-top:46px}
-.cti{display:flex;align-items:center;gap:12px;margin-bottom:15px}
-.ct-ic{width:42px;height:42px;border-radius:8px;background:var(--ghost);border:1px solid var(--rim);display:flex;align-items:center;justify-content:center;font-size:.98rem;flex-shrink:0;transition:all .3s}
-.cti:hover .ct-ic{background:rgba(14,165,233,.1);border-color:var(--sky)}
-.ct-lbl{font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--slate);margin-bottom:2px}
-.ct-val{font-size:.86rem;font-weight:600}
-.ct-val a{color:var(--sky);text-decoration:none;transition:color .2s}
-.ct-val a:hover{color:var(--teal)}
-.avail{display:inline-flex;align-items:center;gap:7px;background:rgba(0,201,167,.07);border:1px solid rgba(0,201,167,.18);border-radius:100px;padding:6px 15px;font-size:.73rem;font-weight:700;color:var(--teal);margin-top:18px;margin-bottom:0}
-.avail::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--teal);animation:pulse 2.4s ease-in-out infinite}
-.fg2{margin-bottom:12px}
-.fg2 label{display:block;font-size:.69rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);margin-bottom:5px}
-.fg2 input,.fg2 textarea{width:100%;background:var(--ghost);border:1px solid var(--rim);border-radius:7px;padding:10px 13px;color:var(--snow);font-family:'Sora',sans-serif;font-size:.84rem;outline:none;transition:border-color .25s}
-.fg2 input::placeholder,.fg2 textarea::placeholder{color:rgba(122,156,196,.3)}
-.fg2 input:focus,.fg2 textarea:focus{border-color:var(--sky);background:rgba(14,165,233,.04)}
-.fg2 textarea{min-height:108px;resize:vertical}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.fsuc{display:none;text-align:center;padding:13px;background:rgba(0,201,167,.07);border:1px solid rgba(0,201,167,.18);border-radius:8px;color:var(--teal);font-weight:700;margin-top:11px;font-size:.84rem}
-/* FOOTER */
-footer{position:relative;z-index:1;padding:40px clamp(16px,5%,72px);border-top:1px solid var(--rim)}
-.ft-in{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px}
-.ft-logo{font-size:1rem;font-weight:900}
-.ft-logo em{font-style:normal;background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.ftl{display:flex;gap:1.4rem;list-style:none;flex-wrap:wrap}
-.ftl a{color:var(--slate);text-decoration:none;font-size:.76rem;font-weight:500;transition:color .2s}
-.ftl a:hover{color:var(--snow)}
-.ft-copy{font-size:.68rem;color:rgba(122,156,196,.35);margin-top:16px;text-align:center}
-/* TOP */
-#sct{position:fixed;bottom:24px;right:24px;width:38px;height:38px;background:var(--gt);border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;z-index:100;opacity:0;transform:translateY(7px);transition:all .3s;color:var(--ink);font-size:.92rem;font-weight:700;text-decoration:none}
-#sct.v{opacity:1;transform:none}
-/* LANG */
-[data-l]{display:none}[data-l].al{display:block}
-span[data-l].al,strong[data-l].al,li[data-l].al{display:inline}
-.chip[data-l].al,.avail[data-l].al,.h-av[data-l].al,.pill[data-l].al{display:inline-flex}
-/* RESPONSIVE */
-@media(max-width:960px){
-  .hg,.ag,.cvw,.ctg{grid-template-columns:1fr}
-  .hgal,.port,.cvf{display:none}
-  .nlinks{display:none}.hbtn{display:flex}
-  .hstats{grid-template-columns:repeat(2,1fr)}
-  .hs{padding:8px 0;border-right:none;border-bottom:1px solid var(--rim)}
-  .hs:last-child,.hs:nth-last-child(2):not(:last-child){border-bottom:none}
-  .skw,.edug{grid-template-columns:1fr}
-  .recog{grid-column:auto;grid-template-columns:1fr}
-  .gmosaic{grid-template-columns:1fr 1fr;grid-auto-rows:165px}
-  .gm:nth-child(n){grid-column:span 1;grid-row:span 1}
-  .gm:nth-child(1){grid-column:span 2}
-  .pflag{grid-template-columns:1fr}
-  .pflag-img{height:200px}
-  .pflag-ov{background:linear-gradient(to top,var(--ink) 30%,transparent 70%)}
-  .frow{grid-template-columns:1fr}
-  .tg2{grid-template-columns:1fr 1fr}
-  section{padding:62px clamp(16px,5%,72px)}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-@media(max-width:480px){
-  .pgrid{grid-template-columns:1fr}
-  .ahi{grid-template-columns:1fr}
-  .cvhl{grid-template-columns:1fr}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background: var(--ink);
+  color: var(--snow);
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+.bg-dots {
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(16, 185, 129, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(rgba(16, 185, 129, 0.02) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(16, 185, 129, 0.02) 1px, transparent 1px);
+  background-size: 72px 72px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.o1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.1), transparent 70%);
+  top: -250px;
+  left: -250px;
+  animation: obf 22s ease-in-out infinite alternate;
+}
+
+.o2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(34, 211, 160, 0.08), transparent 70%);
+  bottom: -200px;
+  right: -200px;
+  animation: obf 28s ease-in-out infinite alternate;
+  animation-delay: -12s;
+}
+
+@keyframes obf {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(55px, 40px) scale(1.08); }
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 66px;
+  padding: 0 clamp(16px, 5%, 72px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.4s var(--ease);
+}
+
+#nav.on {
+  background: rgba(3, 12, 24, 0.95);
+  backdrop-filter: blur(22px);
+  border-bottom: 1px solid var(--rim);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.nlogo {
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--snow);
+}
+
+.nlogo em {
+  font-style: normal;
+  background: var(--gb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nlinks {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nlinks a {
+  color: var(--slate);
+  text-decoration: none;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.25s;
+  position: relative;
+}
+
+.nlinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: var(--gt);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease);
+}
+
+.nlinks a:hover {
+  color: var(--snow);
+}
+
+.nlinks a:hover::after {
+  transform: scaleX(1);
+}
+
+.navr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lt {
+  display: flex;
+  background: rgba(16, 185, 129, 0.07);
+  border: 1px solid var(--rim);
+  border-radius: 100px;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.lb {
+  padding: 4px 11px;
+  border: none;
+  background: transparent;
+  color: var(--slate);
+  font-family: 'Sora', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 0.25s;
+}
+
+.lb.on {
+  background: var(--gt);
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.hbtn {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.hbtn span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--snow);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.mob {
+  display: none;
+  position: fixed;
+  top: 66px;
+  left: 0;
+  right: 0;
+  background: rgba(3, 12, 24, 0.97);
+  backdrop-filter: blur(22px);
+  border-bottom: 1px solid var(--rim);
+  padding: 18px clamp(16px, 5%, 72px);
+  z-index: 999;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mob.open {
+  display: flex;
+}
+
+.mob a {
+  color: var(--slate);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 9px 12px;
+  border-radius: 7px;
+  transition: all 0.2s;
+}
+
+.mob a:hover {
+  color: var(--snow);
+  background: var(--ghost);
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  padding: clamp(68px, 8vw, 108px) clamp(16px, 5%, 72px);
+}
+
+.W {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.chip::before {
+  content: '';
+  width: 22px;
+  height: 1.5px;
+  background: var(--gt);
+}
+
+h2.T {
+  font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+  font-weight: 900;
+  line-height: 1.07;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+}
+
+h2.T span, h2.T em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.Sub {
+  font-size: 0.93rem;
+  color: var(--slate);
+  max-width: 560px;
+  line-height: 1.78;
+}
+
+.B {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Sora', sans-serif;
+  transition: all 0.3s var(--ease);
+}
+
+.Bp {
+  background: var(--gb);
+  color: #fff;
+}
+
+.Bp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.28);
+}
+
+.Bs {
+  background: transparent;
+  color: var(--snow);
+  border: 1px solid var(--rim);
+}
+
+.Bs:hover {
+  background: var(--ghost);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.Bg {
+  background: var(--gt);
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.Bg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(34, 211, 160, 0.28);
+}
+
+.R {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
+}
+
+.R.v {
+  opacity: 1;
+  transform: none;
+}
+
+.Rx {
+  opacity: 0;
+  transform: translateX(-16px);
+  transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
+}
+
+.Rx.v {
+  opacity: 1;
+  transform: none;
+}
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 66px;
+  overflow: hidden;
+}
+
+.hg {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.h-av {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 185, 129, 0.07);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 22px;
+  animation: fup 0.6s var(--ease) both;
+}
+
+.h-av::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.6); }
+}
+
+.hname {
+  font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+  font-weight: 900;
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+  margin-bottom: 10px;
+  animation: fup 0.7s var(--ease) 0.1s both;
+}
+
+.hname em {
+  font-style: normal;
+  display: block;
+  background: var(--gb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hrole {
+  font-size: clamp(0.87rem, 1.5vw, 1.05rem);
+  color: var(--slate);
+  margin-bottom: 26px;
+  animation: fup 0.7s var(--ease) 0.2s both;
+  line-height: 1.55;
+}
+
+.hrole strong {
+  color: var(--snow);
+  font-weight: 600;
+}
+
+.hdesc {
+  font-size: 0.89rem;
+  color: var(--slate);
+  line-height: 1.85;
+  max-width: 490px;
+  margin-bottom: 34px;
+  animation: fup 0.7s var(--ease) 0.3s both;
+}
+
+.hdesc strong {
+  color: var(--snow);
+}
+
+.hact {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  animation: fup 0.7s var(--ease) 0.4s both;
+}
+
+.hstats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 42px;
+  padding-top: 34px;
+  border-top: 1px solid var(--rim);
+  animation: fup 0.7s var(--ease) 0.5s both;
+}
+
+.hs {
+  padding: 0 18px 0 0;
+  border-right: 1px solid var(--rim);
+}
+
+.hs:last-child {
+  border-right: none;
+}
+
+.hs-n {
+  font-size: 1.85rem;
+  font-weight: 900;
+  background: var(--gb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.hs-l {
+  font-size: 0.62rem;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+
+@keyframes fup {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+.hgal {
+  position: relative;
+  animation: fup 0.9s var(--ease) 0.15s both;
+}
+
+.hgal-main {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 360px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.5);
+}
+
+.hgal-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s var(--ease);
+}
+
+.hgal-main:hover img {
+  transform: scale(1.04);
+}
+
+.hgal-ov {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(3, 12, 24, 0.82) 0%, rgba(3, 12, 24, 0.1) 55%, transparent);
+  pointer-events: none;
+}
+
+.hgal-lbl {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  right: 18px;
+}
+
+.hgal-lbl-t {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 4px;
+}
+
+.hgal-lbl-s {
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.hgal-thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  margin-top: 7px;
+}
+
+.hgt {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 96px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hgt:hover {
+  transform: scale(1.04);
+}
+
+.hgt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s var(--ease);
+}
+
+.hgt:hover img {
+  transform: scale(1.08);
+}
+
+.hgt-ov {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(3, 12, 24, 0.5), transparent);
+}
+
+.fb {
+  position: absolute;
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 8px 13px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: 1px solid var(--rim);
+  background: rgba(7, 21, 34, 0.88);
+  z-index: 10;
+  animation: flt 5s ease-in-out infinite alternate;
+}
+
+.fb1 {
+  top: -12px;
+  right: -12px;
+  color: var(--teal);
+}
+
+.fb2 {
+  bottom: 106px;
+  left: -14px;
+  color: var(--accent);
+}
+
+@keyframes flt {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-9px); }
+}
+
+#about {
+  background: linear-gradient(180deg, transparent, rgba(16, 185, 129, 0.04), transparent);
+}
+
+.ag {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 4.5rem;
+  align-items: start;
+}
+
+.port {
+  position: relative;
+}
+
+.port-frame {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--rim);
+}
+
+.port-frame img {
+  width: 100%;
+  aspect-ratio: 0.82;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.port-frame::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(3, 12, 24, 0.6), transparent);
+  pointer-events: none;
+}
+
+.port-badge {
+  position: absolute;
+  bottom: -14px;
+  right: -14px;
+  background: var(--gb);
+  border-radius: 12px;
+  padding: 13px 17px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(16, 185, 129, 0.28);
+}
+
+.port-badge-n {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.port-badge-l {
+  font-size: 0.58rem;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.port-pills {
+  display: flex;
+  gap: 7px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--ghost);
+  border: 1px solid var(--rim);
+  border-radius: 100px;
+  padding: 4px 11px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.atxt p {
+  color: var(--slate);
+  line-height: 1.85;
+  margin-bottom: 13px;
+}
+
+.atxt p strong {
+  color: var(--snow);
+}
+
+.ahi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.ai {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  background: var(--ghost);
+  border: 1px solid var(--rim);
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s;
+}
+
+.ai:hover {
+  border-color: rgba(16, 185, 129, 0.28);
+  background: rgba(16, 185, 129, 0.06);
+}
+
+.ai-ic {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: var(--gb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.ai-t {
+  font-size: 0.76rem;
+  color: var(--slate);
+  line-height: 1.45;
+}
+
+.ai-t strong {
+  display: block;
+  color: var(--snow);
+  font-size: 0.8rem;
+  margin-bottom: 1px;
+}
+
+.tl {
+  position: relative;
+  margin-top: 48px;
+  padding-left: 30px;
+}
+
+.tl::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent), var(--teal), rgba(0, 201, 167, 0.1));
+}
+
+.tle {
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.tle-dot {
+  position: absolute;
+  left: -37px;
+  top: 8px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+}
+
+.tle-dot.c {
+  background: var(--teal);
+  box-shadow: 0 0 0 4px rgba(0, 201, 167, 0.18), 0 0 18px rgba(0, 201, 167, 0.28);
+}
+
+.tle-dot.o {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18);
+}
+
+.tle-dot.x {
+  background: var(--slate);
+  box-shadow: 0 0 0 3px rgba(122, 156, 196, 0.15);
+}
+
+.tlc {
+  background: linear-gradient(135deg, rgba(7, 21, 34, 0.8), rgba(12, 32, 64, 0.6));
+  border: 1px solid var(--rim);
+  border-radius: 14px;
+  padding: 22px 26px;
+  transition: all 0.3s;
+}
+
+.tlc:hover {
+  border-color: rgba(16, 185, 129, 0.28);
+  transform: translateX(4px);
+}
+
+.tlt {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 13px;
+}
+
+.tl-role {
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.tl-co {
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.tl-per {
+  font-size: 0.67rem;
+  font-family: 'DM Mono', monospace;
+  color: var(--slate);
+  background: var(--ghost);
+  border: 1px solid var(--rim);
+  padding: 3px 10px;
+  border-radius: 100px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tl-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tl-ul li {
+  font-size: 0.82rem;
+  color: var(--slate);
+  padding-left: 13px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.tl-ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+  font-size: 0.63rem;
+  top: 3px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 11px;
+}
+
+.tag {
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 100px;
+  background: rgba(16, 185, 129, 0.07);
+  border: 1px solid rgba(16, 185, 129, 0.16);
+  color: var(--accent);
+}
+
+.tag.g {
+  background: rgba(0, 201, 167, 0.07);
+  border-color: rgba(0, 201, 167, 0.16);
+  color: var(--teal);
+}
+
+.tag.a {
+  background: rgba(245, 158, 11, 0.07);
+  border-color: rgba(245, 158, 11, 0.16);
+  color: var(--amber);
+}
+
+#projects {
+  background: linear-gradient(180deg, transparent, rgba(16, 185, 129, 0.04), transparent);
+}
+
+.pflag {
+  background: linear-gradient(135deg, rgba(7, 21, 34, 0.9), rgba(12, 32, 64, 0.7));
+  border: 1px solid var(--rim);
+  border-radius: 18px;
+  overflow: hidden;
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 360px;
+}
+
+.pflag-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.pflag-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s var(--ease);
+}
+
+.pflag:hover .pflag-img img {
+  transform: scale(1.04);
+}
+
+.pflag-ov {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 40%, var(--ink) 90%);
+  pointer-events: none;
+}
+
+.pflag-body {
+  padding: 32px 34px 32px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pflag-star {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+
+.pflag-mw {
+  font-size: 3.2rem;
+  font-weight: 900;
+  background: var(--gb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.pflag-u {
+  font-size: 0.8rem;
+  color: var(--slate);
+  margin-bottom: 16px;
+}
+
+.pflag-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+
+.pk {
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid var(--rim);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.pk-v {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--teal);
+}
+
+.pk-l {
+  font-size: 0.58rem;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.pc {
+  background: linear-gradient(135deg, rgba(7, 21, 34, 0.8), rgba(12, 32, 64, 0.6));
+  border: 1px solid var(--rim);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.4s var(--ease);
+}
+
+.pc:hover {
+  border-color: rgba(16, 185, 129, 0.33);
+  transform: translateY(-5px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.33);
+}
+
+.pc-img {
+  height: 165px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pc-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease);
+}
+
+.pc:hover .pc-img img {
+  transform: scale(1.07);
+}
+
+.pc-ov {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(3, 12, 24, 0.88) 0%, rgba(3, 12, 24, 0.1) 55%, transparent);
+  pointer-events: none;
+}
+
+.pc-badge {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  background: rgba(3, 12, 24, 0.78);
+  border: 1px solid var(--rim);
+  backdrop-filter: blur(7px);
+  border-radius: 100px;
+  padding: 3px 9px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.pc-mw {
+  position: absolute;
+  top: 9px;
+  right: 11px;
+  text-align: right;
+}
+
+.pc-mw-v {
+  font-family: 'DM Mono', monospace;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--teal);
+}
+
+.pc-mw-l {
+  font-size: 0.56rem;
+  color: var(--slate);
+}
+
+.pc-body {
+  padding: 14px 16px;
+}
+
+.pc-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 11px;
+}
+
+.pcm {
+  font-size: 0.7rem;
+  color: var(--slate);
+}
+
+.pcm strong {
+  display: block;
+  color: var(--snow);
+  font-size: 0.76rem;
+  margin-bottom: 1px;
+}
+
+.pckpis {
+  display: flex;
+  gap: 6px;
+}
+
+.kp {
+  flex: 1;
+  background: var(--ghost);
+  border: 1px solid var(--rim);
+  border-radius: 7px;
+  padding: 7px;
+  text-align: center;
+}
+
+.kp-v {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.kp-l {
+  font-size: 0.56rem;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+#gallery {
+  background: linear-gradient(180deg, transparent, rgba(16, 185, 129, 0.03), transparent);
+}
+
+.gmosaic {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 195px;
+  gap: 5px;
+  margin-top: 44px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.gm {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gm img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s var(--ease);
+}
+
+.gm:hover img {
+  transform: scale(1.08);
+}
+
+.gm-ov {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(3, 12, 24, 0.78), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gm:hover .gm-ov {
+  opacity: 1;
+}
+
+.gm-info {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  right: 12px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.3s;
+}
+
+.gm:hover .gm-info {
+  opacity: 1;
+  transform: none;
+}
+
+.gm-t {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.gm-s {
+  font-size: 0.64rem;
+  color: var(--teal);
+  margin-top: 2px;
+}
+
+.gm-n {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  background: rgba(3, 12, 24, 0.72);
+  border: 1px solid var(--rim);
+  border-radius: 5px;
+  padding: 2px 7px;
+  font-size: 0.62rem;
+  font-family: 'DM Mono', monospace;
+  color: var(--accent);
+  backdrop-filter: blur(5px);
+}
+
+.gm:nth-child(1) { grid-column: span 8; grid-row: span 2; }
+.gm:nth-child(2) { grid-column: span 4; }
+.gm:nth-child(3) { grid-column: span 4; }
+.gm:nth-child(4) { grid-column: span 3; }
+.gm:nth-child(5) { grid-column: span 3; }
+.gm:nth-child(6) { grid-column: span 3; }
+.gm:nth-child(7) { grid-column: span 3; }
+.gm:nth-child(8) { grid-column: span 4; }
+.gm:nth-child(9) { grid-column: span 4; }
+.gm:nth-child(10) { grid-column: span 4; }
+
+#lb {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.93);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+#lb.open {
+  display: flex;
+}
+
+#lb-img {
+  max-width: 88vw;
+  max-height: 88vh;
+  border-radius: 14px;
+  object-fit: contain;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+}
+
+.lb-x {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.lb-x:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.lb-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  backdrop-filter: blur(7px);
+}
+
+.lb-nav:hover {
+  background: rgba(16, 185, 129, 0.18);
+  border-color: var(--accent);
+}
+
+.lb-p { left: 15px; }
+.lb-n { right: 15px; }
+
+.lb-cap {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(3, 12, 24, 0.82);
+  border: 1px solid var(--rim);
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-size: 0.78rem;
+  color: var(--snow);
+  text-align: center;
+  backdrop-filter: blur(9px);
+  white-space: nowrap;
+  max-width: 88vw;
+}
+
+.lb-cnt {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  background: rgba(3, 12, 24, 0.72);
+  border: 1px solid var(--rim);
+  border-radius: 7px;
+  padding: 3px 10px;
+  font-size: 0.68rem;
+  font-family: 'DM Mono', monospace;
+  color: var(--slate);
+  backdrop-filter: blur(7px);
+}
+
+#skills {
+  background: linear-gradient(180deg, transparent, rgba(16, 185, 129, 0.04), transparent);
+}
+
+.skw {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 46px;
+}
+
+.sk-col {
+  background: linear-gradient(135deg, rgba(7, 21, 34, 0.6), rgba(12, 32, 64, 0.4));
+  border: 1px solid var(--rim);
+  border-radius: 14px;
+  padding: 24px;
+  transition: all 0.3s;
+}
+
+.sk-col:hover {
+  border-color: rgba(16, 185, 129, 0.28);
+  transform: translateY(-3px);
+}
+
+.sk-h {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rim);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.skr {
+  margin-bottom: 18px;
+}
+
+.skt {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.skn {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--snow);
+}
+
+.skp {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.74rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.skbar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.skfill {
+  height: 100%;
+  border-radius: 100px;
+  width: 0;
+  transition: width 1.8s var(--ease);
+}
+
+.fb { background: linear-gradient(90deg, var(--accent), var(--teal)); }
+.fg { background: linear-gradient(90deg, var(--teal), var(--lime)); }
+.fa { background: linear-gradient(90deg, var(--lime), var(--accent)); }
+
+.tg2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tc {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--ghost);
+  border: 1px solid var(--rim);
+  border-radius: 8px;
+  padding: 9px 11px;
+  transition: all 0.3s;
+  font-size: 0.73rem;
+  font-weight: 600;
+  color: var(--snow);
+}
+
+.tc:hover {
+  border-color: rgba(16, 185, 129, 0.28);
+  transform: translateY(-2px);
+}
+
+.certs {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.ci {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  background: var(--ghost);
+  border: 1px solid var(--rim);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.ci-y {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.66rem;
+  color: var(--slate);
+  white-space: nowrap;
+  padding-top: 2px;
+  min-width: 34px;
+  font-weight: 600;
+}
+
+.ci-t {
+  font-size: 0.76rem;
+  color: var(--slate);
+  line-height: 1.5;
+}
+
+.ci-t strong {
+  color: var(--snow);
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.78rem;
+}
+
+#education {
+  background: linear-gradient(180deg, transparent, rgba(16, 185, 129, 0.04), transparent);
+}
+
+.edug {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 46px;
+}
+
+.ec {
+  background: linear-gradient(135deg, rgba(7, 21, 34, 0.8), rgba(12, 32, 64, 0.6));
+  border: 1px solid var(--rim);
+  border-radius: 14px;
+  padding: 22px 24px;
+  display: flex;
+  gap: 14px;
+  transition: all 0.3s;
+}
+
+.ec:hover {
+  border-color: rgba(16, 185, 129, 0.28);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.28);
+}
+
+.ec-ic {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.eib { background: var(--gb); }
+.eig { background: var(--gt); }
+
+.ec-deg {
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.ec-sch {
+  font-size: 0.76rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.ec-yr {
+  font-size: 0.66rem;
+  font-family: 'DM Mono', monospace;
+  color: var(--slate);
+}
+
+.ec-hon {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  color: var(--amber);
+  border-radius: 100px;
+  padding: 2px 7px;
+  margin-top: 5px;
+}
+
+.recog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 16px;
+  grid-column: span 2;
+}
+
+.rc {
+  background: linear-gradient(135deg, rgba(7, 21, 34, 0.8), rgba(12, 32, 64, 0.6));
+  border: 1px solid var(--rim);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  transition: all 0.3s;
+}
+
+.rc:hover {
+  border-color: rgba(16, 185, 129, 0.28);
+  transform: translateY(-2px);
+}
+
+.rc-flag {
+  font-size: 1.9rem;
+}
+
+.rc-t {
+  font-size: 0.86rem;
+  font-weight: 800;
+  margin-bottom: 3px;
+}
+
+.rc-s {
+  font-size: 0.74rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.rc-b {
+  font-size: 0.74rem;
+  color: var(--slate);
+}
+
+#cv {
+  background: linear-gradient(180deg, transparent, rgba(16, 185, 129, 0.04), transparent);
+}
+
+.cvw {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+  margin-top: 46px;
+}
+
+.cvf {
+  background: linear-gradient(135deg, rgba(7, 21, 34, 0.8), rgba(12, 32, 64, 0.6));
+  border: 1px solid var(--rim);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.45);
+}
+
+.cvf-hd {
+  background: rgba(16, 185, 129, 0.07);
+  border-bottom: 1px solid var(--rim);
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.cvf-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.cd {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.cd1 { background: #ff5f57; }
+.cd2 { background: #febc2e; }
+.cd3 { background: #28c840; }
+
+.cvf-bar {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--rim);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 0.68rem;
+  font-family: 'DM Mono', monospace;
+  color: var(--slate);
+}
+
+.cvf-body {
+  padding: 18px;
+}
+
+.cvhl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-bottom: 14px;
+}
+
+.cvh {
+  background: var(--ghost);
+  border: 1px solid var(--rim);
+  border-radius: 8px;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.cvh-i {
+  font-size: 1.1rem;
+}
+
+.cvh-t {
+  font-size: 0.73rem;
+  color: var(--slate);
+}
+
+.cvh-t strong {
+  display: block;
+  color: var(--snow);
+  font-size: 0.76rem;
+  margin-bottom: 1px;
+}
+
+.up-zone {
+  border: 2px dashed var(--rim);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 14px;
+}
+
+.up-zone:hover, .up-zone.drag {
+  border-color: var(--accent);
+  background: rgba(16, 185, 129, 0.04);
+}
+
+.up-zone input {
+  display: none;
+}
+
+.up-ico {
+  font-size: 2rem;
+  margin-bottom: 7px;
+}
+
+.up-txt {
+  font-size: 0.82rem;
+  color: var(--slate);
+  margin-bottom: 4px;
+}
+
+.up-txt strong {
+  color: var(--snow);
+}
+
+.up-hint {
+  font-size: 0.68rem;
+  color: rgba(122, 156, 196, 0.45);
+}
+
+#contact {
+  background: linear-gradient(180deg, transparent, rgba(16, 185, 129, 0.06), transparent);
+}
+
+.ctg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 46px;
+  align-items: start;
+}
+
+.cti {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.ct-ic {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: var(--ghost);
+  border: 1px solid var(--rim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.98rem;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.cti:hover .ct-ic {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: var(--accent);
+}
+
+.ct-lbl {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--slate);
+  margin-bottom: 2px;
+}
+
+.ct-val {
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.ct-val a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ct-val a:hover {
+  color: var(--teal);
+}
+
+.avail {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(16, 185, 129, 0.07);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  border-radius: 100px;
+  padding: 6px 15px;
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: var(--teal);
+  margin-top: 18px;
+}
+
+.avail::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.fg2 {
+  margin-bottom: 16px;
+}
+
+.fg2 label {
+  display: block;
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 6px;
+}
+
+.fg2 input {
+  width: 100%;
+  background: var(--ghost);
+  border: 1px solid var(--rim);
+  border-radius: 7px;
+  padding: 10px 13px;
+  color: var(--snow);
+  font-family: 'Sora', sans-serif;
+  font-size: 0.84rem;
+  outline: none;
+  transition: border-color 0.25s;
+}
+
+.fg2 input::placeholder {
+  color: rgba(122, 156, 196, 0.3);
+}
+
+.fg2 input:focus {
+  border-color: var(--accent);
+  background: rgba(16, 185, 129, 0.04);
+}
+
+.fsuc {
+  display: none;
+  text-align: center;
+  padding: 13px;
+  background: rgba(16, 185, 129, 0.07);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  border-radius: 8px;
+  color: var(--teal);
+  font-weight: 700;
+  margin-top: 11px;
+  font-size: 0.84rem;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+  padding: 40px clamp(16px, 5%, 72px);
+  border-top: 1px solid var(--rim);
+}
+
+.ft-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.ft-logo {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.ft-logo em {
+  font-style: normal;
+  background: var(--gb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ftl {
+  display: flex;
+  gap: 1.4rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.ftl a {
+  color: var(--slate);
+  text-decoration: none;
+  font-size: 0.76rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.ftl a:hover {
+  color: var(--snow);
+}
+
+.ft-copy {
+  font-size: 0.68rem;
+  color: rgba(122, 156, 196, 0.35);
+  margin-top: 16px;
+  text-align: center;
+}
+
+#sct {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 38px;
+  height: 38px;
+  background: var(--gt);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(7px);
+  transition: all 0.3s;
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#sct.v {
+  opacity: 1;
+  transform: none;
+}
+
+[data-l] { display: none; }
+[data-l].al { display: block; }
+span[data-l].al, strong[data-l].al, li[data-l].al { display: inline; }
+.chip[data-l].al, .avail[data-l].al, .h-av[data-l].al, .pill[data-l].al { display: inline-flex; }
+
+@media (max-width: 960px) {
+  .hg, .ag, .cvw, .ctg { grid-template-columns: 1fr; }
+  .hgal, .port, .cvf { display: none; }
+  .nlinks { display: none; }
+  .hbtn { display: flex; }
+  .hstats { grid-template-columns: repeat(2, 1fr); }
+  .hs { padding: 8px 0; border-right: none; border-bottom: 1px solid var(--rim); }
+  .hs:last-child, .hs:nth-last-child(2):not(:last-child) { border-bottom: none; }
+  .skw { grid-template-columns: 1fr; }
+  .recog { grid-column: auto; grid-template-columns: 1fr; }
+  .gmosaic { grid-template-columns: 1fr 1fr; grid-auto-rows: 165px; }
+  .gm:nth-child(n) { grid-column: span 1; grid-row: span 1; }
+  .gm:nth-child(1) { grid-column: span 2; }
+  .pflag { grid-template-columns: 1fr; }
+  .pflag-img { height: 200px; }
+  .pflag-ov { background: linear-gradient(to top, var(--ink) 30%, transparent 70%); }
+  section { padding: 62px clamp(16px, 5%, 72px); }
+  .tg2 { grid-template-columns: 1fr 1fr; }
+  .edug { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .pgrid { grid-template-columns: 1fr; }
+  .ahi { grid-template-columns: 1fr; }
+  .cvhl { grid-template-columns: 1fr; }
+  .skw { grid-template-columns: 1fr; }
+  .edug { grid-template-columns: 1fr; }
+  .recog { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
 <div class="bg-dots"></div>
 <div class="bg-grid"></div>
-<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
-"""
+<div class="orb o1"></div>
+<div class="orb o2"></div>
 
-FOOT = """
-<a href="#hero" id="sct">↑</a>
-<script>
-let CL='fr';
-function setLang(l){
-  CL=l;
-  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('on'));
-  document.querySelectorAll('.lb').forEach(b=>{if(b.textContent===l.toUpperCase())b.classList.add('on')});
-  document.querySelectorAll('[data-l]').forEach(el=>{
-    const show=el.dataset.l===l;
-    el.classList.toggle('al',show);
-    if(!show){el.style.display='none';return;}
-    const cn=el.className;
-    if(el.tagName==='SPAN'||el.tagName==='STRONG'||el.tagName==='LI')el.style.display='inline';
-    else if(cn.includes('chip')||cn.includes('avail')||cn.includes('h-av')||cn.includes('pill'))el.style.display='inline-flex';
-    else el.style.display='block';
-  });
-}
-window.addEventListener('scroll',()=>{
-  document.getElementById('nav').classList.toggle('on',scrollY>50);
-  document.getElementById('sct').classList.toggle('v',scrollY>380);
-});
-function toggleMob(){document.getElementById('mob').classList.toggle('open')}
-function closeMob(){document.getElementById('mob').classList.remove('open')}
-const ro=new IntersectionObserver(en=>{
-  en.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('v');
-      e.target.querySelectorAll('.skfill').forEach(f=>{if(f.dataset.w)f.style.width=f.dataset.w+'%'});
-    }
-  });
-},{threshold:.07,rootMargin:'0px 0px -35px 0px'});
-document.querySelectorAll('.R,.Rx,.pc,.ec,.tc2').forEach(el=>ro.observe(el));
-function animN(el,tgt,sfx){
-  let v=0;const inc=tgt/120;
-  const t=setInterval(()=>{v=Math.min(v+inc,tgt);el.textContent=(Number.isInteger(tgt)?Math.floor(v):v.toFixed(1))+(sfx||'');if(v>=tgt)clearInterval(t);},15);
-}
-const co=new IntersectionObserver(en=>{
-  if(en[0].isIntersecting){document.querySelectorAll('[data-c]').forEach(el=>animN(el,+el.dataset.c,el.dataset.s||'+'));co.disconnect();}
-},{threshold:.3});
-const hs=document.querySelector('.hstats');if(hs)co.observe(hs);
-// Gallery data - titles only, images already embedded in HTML
-const GAL_DATA=[
-  {t:'Vue drone · Centrale solaire 1.2 MWp',c:'Djerba, Tunisie · MLS Energies'},
-  {t:'Inauguration · Équipe MLS Energies',c:'50+ collaborateurs · Djerba'},
-  {t:'Coordination chantier · Équipe internationale',c:'Centrale solaire · Tunisie'},
-  {t:'Onduleur 1 · Supervision performance',c:'Contrôle terrain · Tunisie'},
-  {t:'Suivi chantier · Casques sécurité',c:'EPC Coordination · Tunisie'},
-  {t:'Inspection terrain · Contrôle qualité',c:'Centrale solaire · Tunisie'},
-  {t:'Conception 3D · Bureau d\\'études PV',c:'Modélisation toiture · SketchUp'},
-  {t:'Pompage solaire · Zone rurale',c:'Arrêt Yati · Accès eau potable'},
-  {t:'Toiture · Complexe hôtelier',c:'Oasis palmiers · 120 kWp'},
-  {t:'Site isolé · Poste de livraison',c:'Off-grid BESS · Tunisie'}
-];
-// Get all gallery images from the DOM
-function getGalImgs(){return Array.from(document.querySelectorAll('.gm img'));}
-let li=0;
-function openLB(i){
-  li=i;
-  const imgs=getGalImgs();
-  document.getElementById('lb-img').src=imgs[i]?imgs[i].src:'';
-  document.getElementById('lb-cap').textContent=GAL_DATA[i].t+' · '+GAL_DATA[i].c;
-  document.getElementById('lb-cnt').textContent=(i+1)+'/'+GAL_DATA.length;
-  document.getElementById('lb').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeLB(e){if(!e||e.target.id==='lb'){document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}}
-function navLB(d){
-  const imgs=getGalImgs();
-  li=(li+d+imgs.length)%imgs.length;
-  document.getElementById('lb-img').src=imgs[li].src;
-  document.getElementById('lb-cap').textContent=GAL_DATA[li].t+' · '+GAL_DATA[li].c;
-  document.getElementById('lb-cnt').textContent=(li+1)+'/'+GAL_DATA.length;
-}
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape')closeLB({target:{id:'lb'}});
-  if(e.key==='ArrowRight')navLB(1);
-  if(e.key==='ArrowLeft')navLB(-1);
-});
-let cvF=null;
-const CV_B64='__CV_DATA__';
-function dlCV(e){
-  e&&e.preventDefault();
-  if(cvF){const a=document.createElement('a');a.href=URL.createObjectURL(cvF);a.download=cvF.name;a.click();}
-  else if(CV_B64&&CV_B64.length>50){const a=document.createElement('a');a.href=CV_B64;a.download='Radhouane_Zayoud_CV.pdf';a.click();}
-  else alert('CV disponible : zayoudradhouane@gmail.com / +216 23 781 661');
-}
-function cvSel(e){const f=e.target.files[0];if(!f)return;cvF=f;document.getElementById('cfn').textContent=f.name;document.getElementById('cfs').textContent=(f.size/1024).toFixed(0)+' KB';document.getElementById('cvc').style.display='flex';}
-function cvRm(){cvF=null;document.getElementById('cvc').style.display='none';document.getElementById('cfi').value='';}
-function cvDO(e){e.preventDefault();e.currentTarget.classList.add('drag')}
-function cvDL(e){e.currentTarget.classList.remove('drag')}
-function cvDrop(e){e.preventDefault();e.currentTarget.classList.remove('drag');const f=e.dataTransfer.files[0];if(f){cvF=f;document.getElementById('cfn').textContent=f.name;document.getElementById('cfs').textContent=(f.size/1024).toFixed(0)+' KB';document.getElementById('cvc').style.display='flex';}}
-function submitForm(e){e.preventDefault();const s=document.getElementById('fsuc');s.style.display='block';e.target.reset();setTimeout(()=>s.style.display='none',5000);}
-document.querySelectorAll('.pc').forEach((c,i)=>c.style.transitionDelay=(i*.07)+'s');
-document.querySelectorAll('.tc2').forEach((c,i)=>c.style.transitionDelay=(i*.1)+'s');
-document.querySelectorAll('.ec').forEach((c,i)=>c.style.transitionDelay=(i*.08)+'s');
-setLang('fr');
-</script>
-</body></html>"""
-
-# ── Inline images directly into the BODY HTML ──
-I = imgs  # shortcut
-
-BODY = f"""
 <nav id="nav">
   <a href="#hero" class="nlogo">R.<em>Zayoud</em></a>
   <ul class="nlinks">
@@ -504,6 +2059,7 @@ BODY = f"""
     <button class="hbtn" onclick="toggleMob()"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
 <nav class="mob" id="mob">
   <a href="#about" onclick="closeMob()">À propos / About / Über mich</a>
   <a href="#experience" onclick="closeMob()">Expérience / Experience / Erfahrung</a>
@@ -542,26 +2098,6 @@ BODY = f"""
           <div class="hs"><div class="hs-n" data-c="3" data-s=" pays">0</div><div class="hs-l" data-l="fr" style="display:block">Pays</div><div class="hs-l" data-l="en">Countries</div><div class="hs-l" data-l="de">Länder</div></div>
         </div>
       </div>
-      <!-- HERO GALLERY – images embedded directly via src="data:..." -->
-      <div class="hgal">
-        <div style="position:relative">
-          <div class="fb fb1">⚡ PR ≥ 96% · Certified</div>
-          <div class="hgal-main" onclick="openLB(0)">
-            <img src="{I[4]}" alt="Vue aérienne centrale solaire 1.2 MWp désert Tunisie" loading="lazy">
-            <div class="hgal-ov"></div>
-            <div class="hgal-lbl">
-              <div class="hgal-lbl-t">📍 Sud Tunisie — Vue Drone</div>
-              <div class="hgal-lbl-s">Centrale solaire 1.2 MWp · MLS Energies</div>
-            </div>
-          </div>
-          <div class="hgal-thumbs">
-            <div class="hgt" onclick="openLB(1)"><img src="{I[5]}" alt="Équipe inauguration" loading="lazy"><div class="hgt-ov"></div></div>
-            <div class="hgt" onclick="openLB(6)"><img src="{I[8]}" alt="Conception 3D" loading="lazy"><div class="hgt-ov"></div></div>
-            <div class="hgt" onclick="openLB(8)"><img src="{I[10]}" alt="Panneaux oasis" loading="lazy"><div class="hgt-ov"></div></div>
-          </div>
-          <div class="fb fb2">🌍 10 MW Study · Bénin</div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -569,41 +2105,18 @@ BODY = f"""
 <!-- ══ ABOUT ══ -->
 <section id="about">
   <div class="W">
-    <div class="ag">
-      <div class="port R">
-        <div class="port-frame">
-          <img src="{I[7]}" alt="Radhouane Zayoud ingénieur photovoltaïque terrain" loading="lazy">
-        </div>
-        <div class="port-badge">
-          <div class="port-badge-n">4+</div>
-          <div class="port-badge-l" data-l="fr" style="display:block">Ans exp.</div>
-          <div class="port-badge-l" data-l="en">Yrs exp.</div>
-          <div class="port-badge-l" data-l="de">Jahre</div>
-        </div>
-        <div class="port-pills">
-          <div class="pill">🇫🇷 ENIC-NARIC</div>
-          <div class="pill">🇩🇪 ZAB</div>
-          <div class="pill">🏅 ENIG — Mention TB</div>
-        </div>
-      </div>
-      <div class="atxt R" style="transition-delay:.1s">
-        <div class="chip" data-l="fr" style="display:inline-flex">À Propos</div>
-        <div class="chip" data-l="en">About Me</div>
-        <div class="chip" data-l="de">Über mich</div>
-        <h2 class="T"><span data-l="fr" class="al">Ingénieur PV spécialisé<br>en projets <em>Utility-Scale</em></span><span data-l="en">PV Engineer specialized<br>in <em>Utility-Scale</em> projects</span><span data-l="de">PV-Ingenieur spezialisiert<br>auf <em>Utility-Scale</em></span></h2>
-        <p data-l="fr" style="display:block">Diplômé avec mention <strong>Très Bien de l'ENIG (École Nationale d'Ingénieurs de Gabès)</strong>, je pilote depuis 4+ ans des projets photovoltaïques de toutes tailles en Tunisie et en Afrique — de <strong>50 installations résidentielles</strong> aux <strong>études de parcs 10 MW au Bénin</strong>. Je couvre l'intégralité du cycle EPC.</p>
-        <p data-l="fr" style="display:block">Expert en <strong>PVSyst, AutoCAD, BESS et dimensionnement MV/LV</strong>, je prends en charge les études techniques, la coordination des sous-traitants, la supervision chantier et le reporting. Diplôme reconnu en <strong>France (ENIC-NARIC)</strong> et <strong>Allemagne (ZAB)</strong>.</p>
-        <p data-l="en">Graduated with <strong>High Honors from ENIG</strong>, I have led PV projects of all sizes across Tunisia and Africa for 4+ years — from <strong>50+ residential installations</strong> to <strong>10 MW utility-scale studies in Benin</strong>. I cover the full EPC lifecycle.</p>
-        <p data-l="en">Expert in <strong>PVSyst, AutoCAD, BESS and MV/LV design</strong>. Degree recognized in <strong>France (ENIC-NARIC)</strong> and <strong>Germany (ZAB)</strong>.</p>
-        <p data-l="de">Mit <strong>Auszeichnung (Très Bien) an der ENIG</strong> abgeschlossen — 4+ Jahre Erfahrung mit PV-Projekten in Tunesien und Afrika. Von <strong>50+ Wohnanlagen</strong> bis zu <strong>10-MW-Studien in Benin</strong>.</p>
-        <p data-l="de">Experte für <strong>PVSyst, AutoCAD, BESS und MV/LV-Auslegung</strong>. Abschluss anerkannt in <strong>Frankreich (ENIC-NARIC)</strong> und <strong>Deutschland (ZAB)</strong>.</p>
-        <div class="ahi">
-          <div class="ai"><div class="ai-ic">⚡</div><div class="ai-t"><strong>Utility-Scale PV</strong><span data-l="fr" class="al">Études jusqu'à 10 MW, MV/LV</span><span data-l="en">Studies up to 10 MW, MV/LV</span><span data-l="de">Studien bis 10 MW, MV/LV</span></div></div>
-          <div class="ai"><div class="ai-ic">🔋</div><div class="ai-t"><strong>BESS & Hybrid</strong><span data-l="fr" class="al">Stockage batterie, off-grid, pompage</span><span data-l="en">Battery storage, off-grid, pumping</span><span data-l="de">Batteriespeicher, Inselnetz</span></div></div>
-          <div class="ai"><div class="ai-ic">🔌</div><div class="ai-t"><strong>MV/LV Design</strong><span data-l="fr" class="al">Câblage, protections, postes</span><span data-l="en">Cabling, protections, substations</span><span data-l="de">Verkabelung, Schutz, Stationen</span></div></div>
-          <div class="ai"><div class="ai-ic">🌍</div><div class="ai-t"><strong>International</strong><span data-l="fr" class="al">Tunisie, Bénin · Europe / Afrique</span><span data-l="en">Tunisia, Benin · Europe / Africa</span><span data-l="de">Tunesien, Benin · Europa / Afrika</span></div></div>
-        </div>
-      </div>
+    <div class="chip R" data-l="fr" style="display:none">À Propos</div>
+    <div class="chip R" data-l="en">About Me</div>
+    <div class="chip R" data-l="de">Über mich</div>
+    <h2 class="T R"><span data-l="fr" class="al">Ingénieur PV spécialisé<br>en projets <em>Utility-Scale</em></span><span data-l="en">PV Engineer specialized<br>in <em>Utility-Scale</em> projects</span><span data-l="de">PV-Ingenieur spezialisiert<br>auf <em>Utility-Scale</em></span></h2>
+    <p data-l="fr" style="display:block;color:var(--slate);line-height:1.85;max-width:800px;margin-bottom:20px;margin-top:-8px">Diplômé avec mention <strong style="color:var(--snow)">Très Bien de l'ENIG (École Nationale d'Ingénieurs de Gabès)</strong>, je pilote depuis 4+ ans des projets photovoltaïques de toutes tailles en Tunisie et en Afrique — de <strong style="color:var(--snow)">50+ installations résidentielles</strong> aux <strong style="color:var(--snow)">études de parcs 10 MW au Bénin</strong>. Couverture complète du cycle EPC : études technico-économiques, conception MV/LV, simulation de production (PVSyst), coordination de chantier et suivi de mise en service.</p>
+    <p data-l="en" style="display:block;color:var(--slate);line-height:1.85;max-width:800px;margin-bottom:20px;margin-top:-8px">Graduated with <strong style="color:var(--snow)">High Honors from ENIG</strong>, I have led PV projects of all sizes across Tunisia and Africa for 4+ years — from <strong style="color:var(--snow)">50+ residential installations</strong> to <strong style="color:var(--snow)">10 MW utility-scale studies in Benin</strong>. Full EPC cycle coverage: feasibility studies, MV/LV design, PVSyst yield modeling, site coordination and commissioning support.</p>
+    <p data-l="de" style="display:block;color:var(--slate);line-height:1.85;max-width:800px;margin-bottom:20px;margin-top:-8px">Mit <strong style="color:var(--snow)">Auszeichnung (Très Bien) an der ENIG</strong> abgeschlossen — 4+ Jahre Erfahrung mit PV-Projekten in Tunesien und Afrika. Von <strong style="color:var(--snow)">50+ Wohnanlagen</strong> bis zu <strong style="color:var(--snow)">10-MW-Studien in Benin</strong>. Vollständiger EPC-Zyklus: Machbarkeitsstudien, MV/LV-Design, PVsyst-Modellierung und Inbetriebnahme.</p>
+    <div class="ahi">
+      <div class="ai"><div class="ai-ic">⚡</div><div class="ai-t"><strong>Utility-Scale PV · BESS</strong><span data-l="fr" class="al">Études 50 kWp – 10 MW, MV/LV design, Batteries Li-ion</span><span data-l="en">Studies 50 kWp – 10 MW, MV/LV design, Battery storage</span><span data-l="de">Studien 50 kWp – 10 MW, MV/LV, Batteriespeicher</span></div></div>
+      <div class="ai"><div class="ai-ic">📐</div><div class="ai-t"><strong>CAO & Simulation</strong><span data-l="fr" class="al">AutoCAD SLD, PVSyst yield, SketchUp 3D, PVGIS</span><span data-l="en">AutoCAD SLD, PVSyst yield, SketchUp 3D, PVGIS</span><span data-l="de">AutoCAD SLD, PVSyst-Ertrag, SketchUp 3D, PVGIS</span></div></div>
+      <div class="ai"><div class="ai-ic">🏗️</div><div class="ai-t"><strong>EPC Management</strong><span data-l="fr" class="al">Coordination sous-traitants, achats, planification, budgets</span><span data-l="en">Subcontractor coordination, procurement, planning, budgets</span><span data-l="de">Subunternehmer, Beschaffung, Planung, Budgets</span></div></div>
+      <div class="ai"><div class="ai-ic">🌍</div><div class="ai-t"><strong>International</strong><span data-l="fr" class="al">Tunisie, Bénin · Prêt France/Allemagne/Afrique</span><span data-l="en">Tunisia, Benin · Ready France/Germany/Africa</span><span data-l="de">Tunesien, Benin · Bereit für Frankreich/Deutschland</span></div></div>
     </div>
   </div>
 </section>
@@ -614,61 +2127,43 @@ BODY = f"""
     <div class="chip R" data-l="fr" style="display:none">Parcours Professionnel</div>
     <div class="chip R" data-l="en">Career Path</div>
     <div class="chip R" data-l="de">Beruflicher Werdegang</div>
-    <h2 class="T R"><span data-l="fr" class="al">4 ans de terrain en<br><em>projets solaires</em></span><span data-l="en">4 years hands-on in<br><em>solar projects</em></span><span data-l="de">4 Jahre Praxis in<br><em>Solarprojekten</em></span></h2>
+    <h2 class="T R"><span data-l="fr" class="al">4 ans sur le terrain<br><em>en projets solaires</em></span><span data-l="en">4 years hands-on in<br><em>solar projects</em></span><span data-l="de">4 Jahre Praxis in<br><em>Solarprojekten</em></span></h2>
     <div class="tl">
       <div class="tle Rx">
         <div class="tle-dot c"></div>
         <div class="tlc">
           <div class="tlt">
-            <div><div class="tl-role" data-l="fr" style="display:block">Chef de Projets Photovoltaïques</div><div class="tl-role" data-l="en">Photovoltaic Project Manager</div><div class="tl-role" data-l="de">Photovoltaik-Projektleiter</div><div class="tl-co">🏢 MES Distribution – Jugurtha Études et Développement · Tunisie</div></div>
-            <div class="tl-per">Jan 2022 – Présent</div>
+            <div><div class="tl-role" data-l="fr" style="display:block">Chef de Projets Photovoltaïques</div><div class="tl-role" data-l="en">Photovoltaic Project Manager</div><div class="tl-role" data-l="de">Photovoltaik-Projektleiter</div><div class="tl-co">🏢 MES Distribution · Jugurtha Études et Développement</div></div>
+            <div class="tl-per">Jan 2022 – Présent · 2+ ans</div>
           </div>
           <ul class="tl-ul">
-            <li data-l="fr" class="al">Études de faisabilité technique et économique pour projets PV, BESS et pompage solaire</li>
-            <li data-l="fr" class="al">Conception MV/LV, calculs électriques, schémas unifilaires AutoCAD et documentation technique</li>
-            <li data-l="fr" class="al">Layouts PV et études de production avec PVsyst, AutoCAD et SketchUp</li>
-            <li data-l="fr" class="al">Coordination sous-traitants, achats, jalons et phases de mise en service</li>
-            <li data-l="fr" class="al">Validation études pompage solaire et systèmes off-grid · Sourcing fournisseurs</li>
-            <li data-l="en" class="al">Technical and economic feasibility studies for solar PV, BESS and solar pumping</li>
-            <li data-l="en" class="al">MV/LV design, electrical calculations, AutoCAD single-line diagrams</li>
-            <li data-l="en" class="al">PV layouts and yield studies using PVsyst, AutoCAD and SketchUp</li>
-            <li data-l="en" class="al">Subcontractor coordination, procurement, milestones and commissioning</li>
-            <li data-l="de" class="al">Technische und wirtschaftliche Machbarkeitsstudien für PV, BESS und Solarwasser</li>
-            <li data-l="de" class="al">MV/LV-Auslegung, Elektroberechnungen, AutoCAD-Einlinienschaltpläne</li>
-            <li data-l="de" class="al">PV-Layouts und Ertragsstudien mit PVsyst, AutoCAD und SketchUp</li>
-            <li data-l="de" class="al">Subunternehmer-Koordination, Beschaffung, Meilensteine und Inbetriebnahme</li>
+            <li data-l="fr" class="al"><strong>Études technico-économiques</strong> : Faisabilité PV, BESS, pompage solaire. Rapports financiers détaillés, ROI/LCOE, analyse sensibilité.</li>
+            <li data-l="fr" class="al"><strong>Conception MV/LV</strong> : Schémas unifilaires AutoCAD, calculs câbles (Caneco BT), dimensionnement protections, postes de transformation.</li>
+            <li data-l="fr" class="al"><strong>Simulation production</strong> : Modélisation PVsyst (yield ≥96% PR), layouts AutoCAD, études d'ombrage.</li>
+            <li data-l="fr" class="al"><strong>Gestion EPC</strong> : Coordination fournisseurs/sous-traitants, planification chantier, budgets, jalons, démarrage.</li>
+            <li data-l="fr" class="al"><strong>Mots-clés</strong> : PVsyst, AutoCAD, BESS, MV/LV, OFF-GRID, Utility-Scale, EPC Manager</li>
+            <li data-l="en" class="al"><strong>Technical-economic studies</strong> : Feasibility, BESS, solar pumping, detailed financial reports, ROI/LCOE analysis.</li>
+            <li data-l="en" class="al"><strong>MV/LV design</strong> : AutoCAD single-line diagrams, cable calculations, protection sizing, transformer substations.</li>
+            <li data-l="en" class="al"><strong>Production simulation</strong> : PVsyst modeling (≥96% PR), AutoCAD layouts, shading studies.</li>
+            <li data-l="en" class="al"><strong>EPC management</strong> : Supplier coordination, site planning, budgets, milestones, commissioning.</li>
+            <li data-l="de" class="al"><strong>Technische Studien</strong> : Machbarkeit, BESS, Solarwasser, MV/LV-Design, EPC-Management.</li>
           </ul>
-          <div class="tags"><span class="tag">PVsyst</span><span class="tag">AutoCAD</span><span class="tag">BESS</span><span class="tag">MV/LV</span><span class="tag">SketchUp</span><span class="tag g">EPC Manager</span><span class="tag a">MES Distribution</span></div>
+          <div class="tags"><span class="tag">PVsyst</span><span class="tag">AutoCAD</span><span class="tag">BESS</span><span class="tag">MV/LV</span><span class="tag">EPC</span><span class="tag g">Utility-Scale</span><span class="tag a">4×1 MW · 10 MW Study</span></div>
         </div>
       </div>
       <div class="tle Rx" style="transition-delay:.1s">
         <div class="tle-dot o"></div>
         <div class="tlc">
           <div class="tlt">
-            <div><div class="tl-role" data-l="fr" style="display:block">Ingénieur Électricien — Freelance</div><div class="tl-role" data-l="en">Electrical Engineer — Freelance</div><div class="tl-role" data-l="de">Elektroingenieur — Freelance</div><div class="tl-co">🔧 Indépendant · Tunisie</div></div>
-            <div class="tl-per">Août 2020 – Déc 2021</div>
+            <div><div class="tl-role" data-l="fr" style="display:block">Ingénieur Électricien — Freelance</div><div class="tl-role" data-l="en">Electrical Engineer — Freelance</div><div class="tl-role" data-l="de">Elektroingenieur — Freelance</div><div class="tl-co">🔧 Indépendant</div></div>
+            <div class="tl-per">Août 2020 – Déc 2021 · 1.5 ans</div>
           </div>
           <ul class="tl-ul">
-            <li data-l="fr" class="al">Études électriques et plans techniques résidentiels — Caneco BT & AutoCAD</li>
-            <li data-l="en" class="al">Electrical studies and technical drawings for residential projects — Caneco BT & AutoCAD</li>
-            <li data-l="de" class="al">Elektrische Studien und technische Zeichnungen — Caneco BT & AutoCAD</li>
+            <li data-l="fr" class="al">Études électriques résidentielles et tertiaires — Caneco BT, AutoCAD</li>
+            <li data-l="en" class="al">Residential & commercial electrical studies — Caneco BT, AutoCAD</li>
+            <li data-l="de" class="al">Wohn- und Gewerbestudien — Caneco BT, AutoCAD</li>
           </ul>
           <div class="tags"><span class="tag">Caneco BT</span><span class="tag">AutoCAD</span><span class="tag">Résidentiel</span></div>
-        </div>
-      </div>
-      <div class="tle Rx" style="transition-delay:.2s">
-        <div class="tle-dot x"></div>
-        <div class="tlc">
-          <div class="tlt">
-            <div><div class="tl-role" data-l="fr" style="display:block">Ingénieur Conception PV</div><div class="tl-role" data-l="en">PV Design Engineer</div><div class="tl-role" data-l="de">PV-Planungsingenieur</div><div class="tl-co">🏢 Universal Energy · Tunisie</div></div>
-            <div class="tl-per">Jan – Juin 2020</div>
-          </div>
-          <ul class="tl-ul">
-            <li data-l="fr" class="al">Élaboration de devis et conception de structures de montage photovoltaïques</li>
-            <li data-l="en" class="al">Quotation preparation and PV mounting structure design</li>
-            <li data-l="de" class="al">Angebotserstellung und Konstruktion von PV-Montagestrukturen</li>
-          </ul>
-          <div class="tags"><span class="tag">PVsyst</span><span class="tag">Conception PV</span></div>
         </div>
       </div>
     </div>
@@ -681,54 +2176,57 @@ BODY = f"""
     <div class="chip R" data-l="fr" style="display:none">Réalisations Clés</div>
     <div class="chip R" data-l="en">Key Projects</div>
     <div class="chip R" data-l="de">Schlüsselprojekte</div>
-    <h2 class="T R"><span data-l="fr" class="al">Projets <em>emblématiques</em><br>de 50 kWp à 10 MW</span><span data-l="en">Landmark projects<br>from <em>50 kWp to 10 MW</em></span><span data-l="de">Bedeutende Projekte<br><em>50 kWp bis 10 MW</em></span></h2>
-    <!-- FLAGSHIP -->
+    <h2 class="T R"><span data-l="fr" class="al">Portfolio <em>emblématique</em><br>50 kWp à 10 MW</span><span data-l="en"><em>Landmark</em> portfolio<br>50 kWp to 10 MW</span><span data-l="de"><em>Bedeutende</em> Projekte<br>50 kWp bis 10 MW</span></h2>
     <div class="pflag R">
-      <div class="pflag-img">
-        <img src="{I[4]}" alt="Centrale solaire 1.2 MWp vue drone Djerba" loading="lazy">
-        <div class="pflag-ov"></div>
+      <div class="pflag-img" style="background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%); display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center; color: #fff;">
+          <div style="font-size: 3.2rem; font-weight: 900; margin-bottom: 10px;">4×1</div>
+          <div style="font-size: 0.9rem; font-weight: 600;">Centrales MV<br>Djerba</div>
+        </div>
       </div>
       <div class="pflag-body">
-        <div class="pflag-star">★ <span data-l="fr" class="al">Projet phare · Tunisie</span><span data-l="en">Flagship Project · Tunisia</span><span data-l="de">Vorzeigeprojekt · Tunesien</span></div>
-        <div class="pflag-mw">4×1</div>
-        <div class="pflag-u" data-l="fr" style="display:block">MWp · Quatre centrales solaires MV — Djerba, Tunisie</div>
-        <div class="pflag-u" data-l="en">MWp · Four MV utility-scale PV plants — Djerba, Tunisia</div>
-        <div class="pflag-u" data-l="de">MWp · Vier MV-Großsolaranlagen — Djerba, Tunesien</div>
-        <div class="pflag-t" data-l="fr" style="display:block">4 Centrales Solaires 1 MW — Djerba</div>
-        <div class="pflag-t" data-l="en">4×1 MW Utility-Scale Plants — Djerba</div>
-        <div class="pflag-t" data-l="de">4×1-MW-Solaranlagen — Djerba</div>
-        <div class="pflag-l">📍 Djerba, Tunisie · MV Grid Connection · Full EPC</div>
+        <div class="pflag-star">★ <span data-l="fr" class="al">Projet phare · Tunisie</span><span data-l="en">Flagship · Tunisia</span><span data-l="de">Vorzeigeprojekt · Tunesien</span></div>
+        <div class="pflag-mw">4 MWp</div>
+        <div class="pflag-u" data-l="fr" style="display:block">Quatre centrales solaires 1 MW — Djerba, sud Tunisie</div>
+        <div class="pflag-u" data-l="en">Four utility-scale solar plants 1 MW each — Djerba, Tunisia</div>
+        <div class="pflag-u" data-l="de">Vier 1-MW-Solaranlagen — Djerba, Tunesien</div>
         <div class="pflag-kpis">
           <div class="pk"><div class="pk-v">4 MWp</div><div class="pk-l">Puissance</div></div>
           <div class="pk"><div class="pk-v">6 GWh</div><div class="pk-l">/an</div></div>
-          <div class="pk"><div class="pk-v">2 950t</div><div class="pk-l">CO₂</div></div>
+          <div class="pk"><div class="pk-v">≥96%</div><div class="pk-l">PR</div></div>
         </div>
       </div>
     </div>
     <div class="pgrid">
       <div class="pc R">
-        <div class="pc-img"><img src="{I[4]}" alt="10 MW Bénin Afrique" loading="lazy"><div class="pc-ov"></div><span class="pc-badge">🌍 Bénin — 10 MW</span><div class="pc-mw"><div class="pc-mw-v">10</div><div class="pc-mw-l">MWp</div></div><div class="pc-name" data-l="fr" style="display:block">Étude Technico-Éco. 10 MW — Bénin</div><div class="pc-name" data-l="en">10 MW T&E Study — Benin, Africa</div><div class="pc-name" data-l="de">10-MW-Studie — Benin, Afrika</div></div>
-        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong>Type</strong><span data-l="fr" style="display:block">Étude faisabilité</span><span data-l="en">Feasibility study</span><span data-l="de">Machbarkeitsstudie</span></div><div class="pcm"><strong>Outils</strong>PVsyst · RETScreen</div></div><div class="pckpis"><div class="kp"><div class="kp-v">10 MW</div><div class="kp-l">Peak</div></div><div class="kp"><div class="kp-v">&gt;15 GWh</div><div class="kp-l">/an</div></div><div class="kp"><div class="kp-v">7 400t</div><div class="kp-l">CO₂</div></div></div></div>
+        <div class="pc-img" style="background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 2rem;">10 MW</div>
+        <div class="pc-ov"></div><span class="pc-badge">🌍 Bénin · Afrique</span><div class="pc-mw"><div class="pc-mw-v">10</div><div class="pc-mw-l">MWp</div></div>
+        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong data-l="fr" style="display:block">Étude Technico-Éco.</strong><strong data-l="en">Feasibility Study</strong><strong data-l="de">Machbarkeitsstudie</strong><span data-l="fr" style="display:block">10 MW Bénin</span><span data-l="en">10 MW Benin, West Africa</span><span data-l="de">10 MW Benin</span></div><div class="pcm"><strong>Outils</strong><span data-l="fr" style="display:block">PVsyst, RETScreen</span><span data-l="en">PVsyst, RETScreen</span><span data-l="de">PVsyst, RETScreen</span></div></div><div class="pckpis"><div class="kp"><div class="kp-v">10 MW</div><div class="kp-l">Peak</div></div><div class="kp"><div class="kp-v">&gt;15</div><div class="kp-l">GWh/an</div></div><div class="kp"><div class="kp-v">7.4 Mt</div><div class="kp-l">CO₂ save</div></div></div></div>
       </div>
       <div class="pc R">
-        <div class="pc-img"><img src="{I[5]}" alt="2 MW Médenine en cours" loading="lazy"><div class="pc-ov"></div><span class="pc-badge">🔄 En cours 2024</span><div class="pc-mw"><div class="pc-mw-v">2</div><div class="pc-mw-l">MWp</div></div><div class="pc-name" data-l="fr" style="display:block">Centrale 2 MW — Médenine</div><div class="pc-name" data-l="en">2 MW Solar Plant — Medenine</div><div class="pc-name" data-l="de">2-MW-Solaranlage — Medenine</div></div>
-        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong>Statut</strong><span data-l="fr" style="display:block">En cours 2024</span><span data-l="en">Ongoing 2024</span><span data-l="de">Laufend 2024</span></div><div class="pcm"><strong>Type</strong>Ground-mount · MV</div></div><div class="pckpis"><div class="kp"><div class="kp-v">2 MWp</div><div class="kp-l">Peak</div></div><div class="kp"><div class="kp-v">3 GWh</div><div class="kp-l">/an</div></div><div class="kp"><div class="kp-v">1 480t</div><div class="kp-l">CO₂</div></div></div></div>
+        <div class="pc-img" style="background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 2rem;">2 MW</div>
+        <div class="pc-ov"></div><span class="pc-badge">🔄 Cours 2024</span><div class="pc-mw"><div class="pc-mw-v">2</div><div class="pc-mw-l">MWp</div></div>
+        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong data-l="fr" style="display:block">Centrale EPC</strong><strong data-l="en">Solar Plant EPC</strong><strong data-l="de">Solaranlage EPC</strong><span data-l="fr" style="display:block">Médenine, MV Ground</span><span data-l="en">Medenine, MV Ground-Mount</span><span data-l="de">Medenine, MV-Anlage</span></div><div class="pcm"><strong>Statut</strong><span data-l="fr" style="display:block">En cours 2024</span><span data-l="en">Active 2024</span><span data-l="de">Aktiv 2024</span></div></div><div class="pckpis"><div class="kp"><div class="kp-v">2 MW</div><div class="kp-l">Peak</div></div><div class="kp"><div class="kp-v">3 GWh</div><div class="kp-l">/an</div></div><div class="kp"><div class="kp-v">95%</div><div class="kp-l">PR target</div></div></div></div>
       </div>
       <div class="pc R">
-        <div class="pc-img"><img src="{I[1]}" alt="BESS 2x50kW stockage batterie" loading="lazy"><div class="pc-ov"></div><span class="pc-badge">🔋 BESS · 2× 50 kW</span><div class="pc-mw"><div class="pc-mw-v">2×</div><div class="pc-mw-l">50 kW</div></div><div class="pc-name" data-l="fr" style="display:block">Stockage BESS 50 kW × 2 — Tunisie</div><div class="pc-name" data-l="en">2× 50 kW BESS Systems — Tunisia</div><div class="pc-name" data-l="de">2× 50-kW-BESS — Tunesien</div></div>
-        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong>Type</strong>Hybride PV + BESS</div><div class="pcm"><strong>Autonomie</strong>≥ 95%</div></div><div class="pckpis"><div class="kp"><div class="kp-v">100 kW</div><div class="kp-l">Total BESS</div></div><div class="kp"><div class="kp-v">Li-ion</div><div class="kp-l">Tech.</div></div><div class="kp"><div class="kp-v">95%</div><div class="kp-l">Autonom.</div></div></div></div>
+        <div class="pc-img" style="background: linear-gradient(135deg, #2d5a4f 0%, #1a3a2e 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 1.8rem;">BESS</div>
+        <div class="pc-ov"></div><span class="pc-badge">🔋 2× 50 kW</span><div class="pc-mw"><div class="pc-mw-v">100</div><div class="pc-mw-l">kW TOTAL</div></div>
+        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong data-l="fr" style="display:block">Système BESS</strong><strong data-l="en">Battery Storage</strong><strong data-l="de">Batteriespeicher</strong><span data-l="fr" style="display:block">Hybride PV + Li-ion</span><span data-l="en">Hybrid PV + Li-ion</span><span data-l="de">Hybrid PV + Li-ion</span></div><div class="pcm"><strong>Autonomie</strong><span data-l="fr" style="display:block">≥95% off-grid</span><span data-l="en">≥95% off-grid</span><span data-l="de">≥95% Autarkie</span></div></div><div class="pckpis"><div class="kp"><div class="kp-v">2×50</div><div class="kp-l">kW each</div></div><div class="kp"><div class="kp-v">Li-ion</div><div class="kp-l">tech</div></div><div class="kp"><div class="kp-v">95%</div><div class="kp-l">auto</div></div></div></div>
       </div>
       <div class="pc R">
-        <div class="pc-img"><img src="{I[10]}" alt="400 kWp industriel toiture autoconsommation" loading="lazy"><div class="pc-ov"></div><span class="pc-badge">🏭 Industriel · 400 kWp</span><div class="pc-mw"><div class="pc-mw-v">400</div><div class="pc-mw-l">kWp</div></div><div class="pc-name" data-l="fr" style="display:block">Toiture Industrielle — Autoconsommation</div><div class="pc-name" data-l="en">Industrial Rooftop — Self-Consumption</div><div class="pc-name" data-l="de">Industrielle Dachanlage — Eigenverbrauch</div></div>
-        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong>Type</strong>On-grid · Autoconsommation</div><div class="pcm"><strong>Économies</strong>-65% facture</div></div><div class="pckpis"><div class="kp"><div class="kp-v">97%</div><div class="kp-l">PR</div></div><div class="kp"><div class="kp-v">620 MWh</div><div class="kp-l">/an</div></div><div class="kp"><div class="kp-v">306t</div><div class="kp-l">CO₂</div></div></div></div>
+        <div class="pc-img" style="background: linear-gradient(135deg, #2d5a4f 0%, #1a3a2e 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 2rem;">400 kWp</div>
+        <div class="pc-ov"></div><span class="pc-badge">🏭 Industriel</span><div class="pc-mw"><div class="pc-mw-v">400</div><div class="pc-mw-l">kWp</div></div>
+        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong data-l="fr" style="display:block">Toiture Industrielle</strong><strong data-l="en">Industrial Rooftop</strong><strong data-l="de">Industrie-Dach</strong><span data-l="fr" style="display:block">Autoconsommation</span><span data-l="en">Self-Consumption</span><span data-l="de">Eigenverbrauch</span></div><div class="pcm"><strong>Impact</strong><span data-l="fr" style="display:block">-65% facture</span><span data-l="en">-65% bills</span><span data-l="de">-65% Kosten</span></div></div><div class="pckpis"><div class="kp"><div class="kp-v">97%</div><div class="kp-l">PR avg</div></div><div class="kp"><div class="kp-v">620 MWh</div><div class="kp-l">/an</div></div><div class="kp"><div class="kp-v">306 t</div><div class="kp-l">CO₂ saved</div></div></div></div>
       </div>
       <div class="pc R">
-        <div class="pc-img"><img src="{I[3]}" alt="50+ installations résidentielles commerciales" loading="lazy"><div class="pc-ov"></div><span class="pc-badge">🏠 50+ Installations</span><div class="pc-mw"><div class="pc-mw-v">50+</div><div class="pc-mw-l">projets</div></div><div class="pc-name" data-l="fr" style="display:block">Programme Résidentiel & Commercial</div><div class="pc-name" data-l="en">Residential & Commercial Program</div><div class="pc-name" data-l="de">Wohn- & Gewerbeprogramm</div></div>
-        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong>Gamme</strong>3 kWp – 100 kWp</div><div class="pcm"><strong>Clients</strong>Résidentiel · PME</div></div><div class="pckpis"><div class="kp"><div class="kp-v">50+</div><div class="kp-l">Sites</div></div><div class="kp"><div class="kp-v">95%</div><div class="kp-l">PR moy.</div></div><div class="kp"><div class="kp-v">100%</div><div class="kp-l">Satisf.</div></div></div></div>
+        <div class="pc-img" style="background: linear-gradient(135deg, #2d5a4f 0%, #1a3a2e 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 2rem;">50+</div>
+        <div class="pc-ov"></div><span class="pc-badge">🏠 Résidentiel</span><div class="pc-mw"><div class="pc-mw-v">50+</div><div class="pc-mw-l">sites</div></div>
+        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong data-l="fr" style="display:block">Program Résidentiel</strong><strong data-l="en">Residential Program</strong><strong data-l="de">Wohnprogramm</strong><span data-l="fr" style="display:block">3 – 100 kWp each</span><span data-l="en">3 – 100 kWp each</span><span data-l="de">3 – 100 kWp</span></div><div class="pcm"><strong>Gamme</strong><span data-l="fr" style="display:block">PME + résidentiel</span><span data-l="en">SME + residential</span><span data-l="de">KMU + Wohn</span></div></div><div class="pckpis"><div class="kp"><div class="kp-v">50+</div><div class="kp-l">sites</div></div><div class="kp"><div class="kp-v">95%</div><div class="kp-l">PR avg</div></div><div class="kp"><div class="kp-v">100%</div><div class="kp-l">Satisf.</div></div></div></div>
       </div>
       <div class="pc R">
-        <div class="pc-img"><img src="{I[9]}" alt="Pompage solaire zones rurales" loading="lazy"><div class="pc-ov"></div><span class="pc-badge">☀️ Pompage Solaire</span><div class="pc-mw"><div class="pc-mw-v">Off</div><div class="pc-mw-l">-grid</div></div><div class="pc-name" data-l="fr" style="display:block">Pompage Solaire — Zones Rurales</div><div class="pc-name" data-l="en">Solar Pumping — Rural Areas</div><div class="pc-name" data-l="de">Solare Pumpen — Ländlich</div></div>
-        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong>Type</strong>Off-grid · Pompage</div><div class="pcm"><strong>Impact</strong><span data-l="fr" style="display:block">Eau potable</span><span data-l="en">Clean water</span><span data-l="de">Trinkwasser</span></div></div><div class="pckpis"><div class="kp"><div class="kp-v">98%</div><div class="kp-l">Autonom.</div></div><div class="kp"><div class="kp-v">0 CO₂</div><div class="kp-l">vs Diesel</div></div><div class="kp"><div class="kp-v">Rural</div><div class="kp-l">Impact</div></div></div></div>
+        <div class="pc-img" style="background: linear-gradient(135deg, #2d5a4f 0%, #1a3a2e 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 1.8rem;">OFF-GRID</div>
+        <div class="pc-ov"></div><span class="pc-badge">☀️ Pompage Solaire</span><div class="pc-mw"><div class="pc-mw-v">Multi</div><div class="pc-mw-l">sites</div></div>
+        <div class="pc-body"><div class="pc-meta"><div class="pcm"><strong data-l="fr" style="display:block">Système Off-Grid</strong><strong data-l="en">Off-Grid System</strong><strong data-l="de">Inselnetz</strong><span data-l="fr" style="display:block">Zones rurales</span><span data-l="en">Rural areas</span><span data-l="de">Ländlich</span></div><div class="pcm"><strong>Impact</strong><span data-l="fr" style="display:block">Eau potable</span><span data-l="en">Clean water</span><span data-l="de">Trinkwasser</span></div></div><div class="pckpis"><div class="kp"><div class="kp-v">98%</div><div class="kp-l">autono</div></div><div class="kp"><div class="kp-v">0 CO₂</div><div class="kp-l">vs fuel</div></div><div class="kp"><div class="kp-v">Rural</div><div class="kp-l">benefit</div></div></div></div>
       </div>
     </div>
   </div>
@@ -740,28 +2238,28 @@ BODY = f"""
     <div class="chip R" data-l="fr" style="display:none">Galerie Photos</div>
     <div class="chip R" data-l="en">Photo Gallery</div>
     <div class="chip R" data-l="de">Fotogalerie</div>
-    <h2 class="T R"><span data-l="fr" class="al">Mes projets en<br><em>images authentiques</em></span><span data-l="en">My projects in<br><em>authentic photos</em></span><span data-l="de">Meine Projekte in<br><em>echten Fotos</em></span></h2>
-    <p class="Sub R" data-l="fr" style="display:block">10 photos réelles de mes chantiers, inaugurations et installations en Tunisie.</p>
-    <p class="Sub R" data-l="en">10 real photos from my construction sites, inaugurations and installations in Tunisia.</p>
-    <p class="Sub R" data-l="de">10 echte Fotos von meinen Baustellen, Einweihungen und Installationen in Tunesien.</p>
-    <!-- MOSAIC GALLERY – all 10 images embedded directly as src="data:..." -->
+    <h2 class="T R"><span data-l="fr" class="al">Projets en<br><em>images authentiques</em></span><span data-l="en">Projects in<br><em>real photos</em></span><span data-l="de">Projekte in<br><em>echten Fotos</em></span></h2>
+    <p class="Sub R" data-l="fr" style="display:block">10 photos réelles de chantiers, inaugurations et installations. Voir la galerie pour plus de détails.</p>
+    <p class="Sub R" data-l="en">10 authentic photos from construction sites, inaugurations and installations across Tunisia and Africa.</p>
+    <p class="Sub R" data-l="de">10 echte Fotos von Baustellen, Eröffnungen und Anlagen in Tunesien und Afrika.</p>
     <div class="gmosaic R">
-      <div class="gm" onclick="openLB(0)"><img src="{I[4]}" alt="Vue drone centrale solaire désert" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Vue drone · Centrale 1.2 MWp</div><div class="gm-s">Djerba, Tunisie</div></div><div class="gm-n">01</div></div>
-      <div class="gm" onclick="openLB(1)"><img src="{I[5]}" alt="Inauguration équipe MLS 50 personnes" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Inauguration · Équipe MLS</div><div class="gm-s">50+ collaborateurs</div></div><div class="gm-n">02</div></div>
-      <div class="gm" onclick="openLB(2)"><img src="{I[3]}" alt="Équipe coordination chantier" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Coordination chantier</div><div class="gm-s">Équipe internationale</div></div><div class="gm-n">03</div></div>
-      <div class="gm" onclick="openLB(3)"><img src="{I[6]}" alt="Onduleur 1 supervision centrale solaire" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Onduleur 1 · Supervision</div><div class="gm-s">Contrôle performance</div></div><div class="gm-n">04</div></div>
-      <div class="gm" onclick="openLB(4)"><img src="{I[2]}" alt="Équipe casques sécurité chantier" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Suivi chantier · HSE</div><div class="gm-s">EPC Coordination</div></div><div class="gm-n">05</div></div>
-      <div class="gm" onclick="openLB(5)"><img src="{I[7]}" alt="Inspection terrain panneaux solaires" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Inspection terrain</div><div class="gm-s">Contrôle qualité</div></div><div class="gm-n">06</div></div>
-      <div class="gm" onclick="openLB(6)"><img src="{I[8]}" alt="Conception 3D toiture solaire bureau études" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Conception 3D · Bureau d'études</div><div class="gm-s">Modélisation SketchUp</div></div><div class="gm-n">07</div></div>
-      <div class="gm" onclick="openLB(7)"><img src="{I[9]}" alt="Pompage solaire arrêt Yati rural" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Pompage solaire · Rural</div><div class="gm-s">Arrêt Yati · Tunisie</div></div><div class="gm-n">08</div></div>
-      <div class="gm" onclick="openLB(8)"><img src="{I[10]}" alt="Panneaux toiture oasis palmiers" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Toiture · Complexe hôtelier</div><div class="gm-s">Oasis palmiers · 120 kWp</div></div><div class="gm-n">09</div></div>
-      <div class="gm" onclick="openLB(9)"><img src="{I[1]}" alt="Site isolé poste livraison off-grid" loading="lazy"><div class="gm-ov"></div><div class="gm-info"><div class="gm-t">Site isolé · Poste livraison</div><div class="gm-s">Off-grid BESS</div></div><div class="gm-n">10</div></div>
+      <div class="gm" style="background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">Vue drone 1.2 MWp</div>
+      <div class="gm" style="background: linear-gradient(135deg, #2d5a4f 0%, #1a3a2e 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">Équipe inauguration</div>
+      <div class="gm" style="background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">Coordination EPC</div>
+      <div class="gm" style="background: linear-gradient(135deg, #2d5a4f 0%, #1a3a2e 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">Onduleur MV</div>
+      <div class="gm" style="background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">Suivi HSE</div>
+      <div class="gm" style="background: linear-gradient(135deg, #2d5a4f 0%, #1a3a2e 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">QA Inspection</div>
+      <div class="gm" style="background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">CAO 3D PV</div>
+      <div class="gm" style="background: linear-gradient(135deg, #2d5a4f 0%, #1a3a2e 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">Pompage rural</div>
+      <div class="gm" style="background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">Toiture 120 kWp</div>
+      <div class="gm" style="background: linear-gradient(135deg, #2d5a4f 0%, #1a3a2e 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700;">Off-grid BESS</div>
     </div>
   </div>
 </section>
-<!-- LIGHTBOX -->
+
+<!-- ══ LIGHTBOX ══ -->
 <div id="lb" onclick="closeLB(event)">
-  <div class="lb-x" onclick="closeLB({{target:{{id:'lb'}}}})">✕</div>
+  <div class="lb-x" onclick="closeLB({target:{id:'lb'}})">✕</div>
   <button class="lb-nav lb-p" onclick="navLB(-1);event.stopPropagation()">‹</button>
   <img id="lb-img" src="" alt="">
   <button class="lb-nav lb-n" onclick="navLB(1);event.stopPropagation()">›</button>
@@ -777,47 +2275,49 @@ BODY = f"""
     <div class="chip R" data-l="de">Fachkenntnisse</div>
     <h2 class="T R"><span data-l="fr" class="al">Compétences <em>techniques</em><br>& management</span><span data-l="en">Technical <em>skills</em><br>& management</span><span data-l="de">Technische <em>Fähigkeiten</em><br>& Management</span></h2>
     <div class="skw">
-      <div class="R">
-        <div class="sk-h">⚙️ <span data-l="fr" class="al">Compétences Techniques</span><span data-l="en">Technical Skills</span><span data-l="de">Technische Fähigkeiten</span></div>
-        <div class="skr"><div class="skt"><span class="skn">PVsyst (Simulation & Yield)</span><span class="skp">92%</span></div><div class="skbar"><div class="skfill fb" data-w="92"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn">AutoCAD (SLD, Layout)</span><span class="skp">88%</span></div><div class="skbar"><div class="skfill fb" data-w="88"></div></div></div>
+      <div class="sk-col R">
+        <div class="sk-h">⚙️ <span data-l="fr" class="al">Simulation & Études</span><span data-l="en">Simulation & Studies</span><span data-l="de">Simulation & Studien</span></div>
+        <div class="skr"><div class="skt"><span class="skn">PVsyst (Yield Model)</span><span class="skp">92%</span></div><div class="skbar"><div class="skfill fb" data-w="92"></div></div></div>
         <div class="skr"><div class="skt"><span class="skn">MV/LV Electrical Design</span><span class="skp">90%</span></div><div class="skbar"><div class="skfill fg" data-w="90"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn">BESS & Hybrid Systems</span><span class="skp">82%</span></div><div class="skbar"><div class="skfill fg" data-w="82"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn">Solar Pumping & Off-Grid</span><span class="skp">85%</span></div><div class="skbar"><div class="skfill fa" data-w="85"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn">Performance Analysis (PR/Yield)</span><span class="skp">88%</span></div><div class="skbar"><div class="skfill fa" data-w="88"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn">Caneco BT · Cable Sizing</span><span class="skp">80%</span></div><div class="skbar"><div class="skfill fb" data-w="80"></div></div></div>
-        <div class="sk-h" style="margin-top:24px">🛠️ <span data-l="fr" class="al">Logiciels</span><span data-l="en">Software</span><span data-l="de">Software</span></div>
+        <div class="skr"><div class="skt"><span class="skn">AutoCAD SLD & Layout</span><span class="skp">88%</span></div><div class="skbar"><div class="skfill fb" data-w="88"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Cable Sizing (Caneco BT)</span><span class="skp">85%</span></div><div class="skbar"><div class="skfill fa" data-w="85"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">PVGIS & RETScreen</span><span class="skp">80%</span></div><div class="skbar"><div class="skfill fg" data-w="80"></div></div></div>
+        <div class="sk-h" style="margin-top:22px">📦 <span data-l="fr" class="al">Logiciels & Outils</span><span data-l="en">Software & Tools</span><span data-l="de">Software & Werkzeuge</span></div>
         <div class="tg2">
-          <div class="tc"><span class="tc-i">☀️</span><span class="tc-n">PVsyst</span></div>
-          <div class="tc"><span class="tc-i">📐</span><span class="tc-n">AutoCAD</span></div>
-          <div class="tc"><span class="tc-i">🏗️</span><span class="tc-n">SketchUp</span></div>
-          <div class="tc"><span class="tc-i">📊</span><span class="tc-n">RETScreen</span></div>
-          <div class="tc"><span class="tc-i">🌤️</span><span class="tc-n">PVGIS</span></div>
-          <div class="tc"><span class="tc-i">⚡</span><span class="tc-n">Caneco BT</span></div>
-          <div class="tc"><span class="tc-i">🎨</span><span class="tc-n">Lumion</span></div>
-          <div class="tc"><span class="tc-i">🏛️</span><span class="tc-n">Robot Struct.</span></div>
-          <div class="tc"><span class="tc-i">📋</span><span class="tc-n">MS Project</span></div>
+          <div class="tc">PVsyst</div>
+          <div class="tc">AutoCAD</div>
+          <div class="tc">SketchUp</div>
+          <div class="tc">Caneco BT</div>
+          <div class="tc">RETScreen</div>
+          <div class="tc">PVGIS</div>
         </div>
       </div>
-      <div class="R" style="transition-delay:.15s">
-        <div class="sk-h">🏗️ <span data-l="fr" class="al">Management</span><span data-l="en">Management</span><span data-l="de">Management</span></div>
-        <div class="skr"><div class="skt"><span class="skn" data-l="fr" style="display:inline">Gestion EPC</span><span class="skn" data-l="en">EPC Management</span><span class="skn" data-l="de">EPC-Management</span><span class="skp">90%</span></div><div class="skbar"><div class="skfill fg" data-w="90"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn" data-l="fr" style="display:inline">Appels d'offres & Achats</span><span class="skn" data-l="en">Tendering & Procurement</span><span class="skn" data-l="de">Ausschreibung & Beschaffung</span><span class="skp">85%</span></div><div class="skbar"><div class="skfill fg" data-w="85"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn" data-l="fr" style="display:inline">Supervision chantier</span><span class="skn" data-l="en">Site Supervision</span><span class="skn" data-l="de">Bauüberwachung</span><span class="skp">88%</span></div><div class="skbar"><div class="skfill fa" data-w="88"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn" data-l="fr" style="display:inline">Planification & Budgets</span><span class="skn" data-l="en">Planning & Budgets</span><span class="skn" data-l="de">Planung & Budget</span><span class="skp">84%</span></div><div class="skbar"><div class="skfill fa" data-w="84"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn" data-l="fr" style="display:inline">Reporting client</span><span class="skn" data-l="en">Client Reporting</span><span class="skn" data-l="de">Reporting</span><span class="skp">87%</span></div><div class="skbar"><div class="skfill fb" data-w="87"></div></div></div>
-        <div class="sk-h" style="margin-top:24px">🌍 <span data-l="fr" class="al">Langues</span><span data-l="en">Languages</span><span data-l="de">Sprachen</span></div>
-        <div class="skr"><div class="skt"><span class="skn">Arabe / Arabic</span><span class="skp" data-l="fr" style="display:inline">Natif</span><span class="skp" data-l="en">Native</span><span class="skp" data-l="de">Muttersprache</span></div><div class="skbar"><div class="skfill fb" data-w="100"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn">Français · C1 · TCF</span><span class="skp">C1</span></div><div class="skbar"><div class="skfill fg" data-w="90"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn">English · B2 · TOEIC</span><span class="skp">B2</span></div><div class="skbar"><div class="skfill fa" data-w="72"></div></div></div>
-        <div class="skr"><div class="skt"><span class="skn">Deutsch · A2 · ÖSD</span><span class="skp">A2</span></div><div class="skbar"><div class="skfill fb" data-w="35"></div></div></div>
-        <div class="sk-h" style="margin-top:24px">📜 <span data-l="fr" class="al">Certifications</span><span data-l="en">Certifications</span><span data-l="de">Zertifikate</span></div>
+      <div class="sk-col R" style="transition-delay:.1s">
+        <div class="sk-h">🔌 <span data-l="fr" class="al">Électricité & Électronique</span><span data-l="en">Electrical & Electronics</span><span data-l="de">Elektrotechnik & Elektronik</span></div>
+        <div class="skr"><div class="skt"><span class="skn">BESS & Battery Systems</span><span class="skp">88%</span></div><div class="skbar"><div class="skfill fg" data-w="88"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Off-Grid & Pumping</span><span class="skp">85%</span></div><div class="skbar"><div class="skfill fa" data-w="85"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Inverter Integration</span><span class="skp">87%</span></div><div class="skbar"><div class="skfill fb" data-w="87"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Performance Analysis</span><span class="skp">88%</span></div><div class="skbar"><div class="skfill fg" data-w="88"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Protection & Control</span><span class="skp">82%</span></div><div class="skbar"><div class="skfill fa" data-w="82"></div></div></div>
+        <div class="sk-h" style="margin-top:22px">📜 <span data-l="fr" class="al">Certifications</span><span data-l="en">Certifications</span><span data-l="de">Zertifikate</span></div>
         <div class="certs">
-          <div class="ci"><div class="ci-y">2024</div><div class="ci-t"><strong data-l="fr" style="display:block">Estimation des Coûts PV</strong><strong data-l="en">PV Cost Estimation</strong><strong data-l="de">PV-Kostenschätzung</strong>KCS Training Center</div></div>
-          <div class="ci"><div class="ci-y">2023</div><div class="ci-t"><strong data-l="fr" style="display:block">Rentabilité PV</strong><strong data-l="en">PV Profitability</strong><strong data-l="de">PV-Rentabilität</strong>KHADAMET</div></div>
-          <div class="ci"><div class="ci-y">2023</div><div class="ci-t"><strong data-l="fr" style="display:block">Transformateurs MV</strong><strong data-l="en">MV Transformers</strong><strong data-l="de">MV-Transformatoren</strong>SACEM</div></div>
-          <div class="ci"><div class="ci-y">2021</div><div class="ci-t"><strong data-l="fr" style="display:block">Installateur ENR — ANME</strong><strong data-l="en">Renewable Energy Installer — ANME</strong><strong data-l="de">ENE-Installateur — ANME</strong>Certifié ANME</div></div>
+          <div class="ci"><div class="ci-y">2024</div><div class="ci-t"><strong data-l="fr" style="display:block">Cost Estimation PV</strong><strong data-l="en">Cost Estimation PV</strong><strong data-l="de">Kostenschätzung PV</strong></div></div>
+          <div class="ci"><div class="ci-y">2023</div><div class="ci-t"><strong data-l="fr" style="display:block">Profitabilité PV</strong><strong data-l="en">PV Profitability</strong><strong data-l="de">PV-Rentabilität</strong></div></div>
+          <div class="ci"><div class="ci-y">2021</div><div class="ci-t"><strong data-l="fr" style="display:block">Installateur ENR</strong><strong data-l="en">ENR Installer</strong><strong data-l="de">ENR-Installateur</strong></div></div>
         </div>
+      </div>
+      <div class="sk-col R" style="transition-delay:.2s">
+        <div class="sk-h">🏗️ <span data-l="fr" class="al">Management & Projet</span><span data-l="en">Management & Project</span><span data-l="de">Management & Projekt</span></div>
+        <div class="skr"><div class="skt"><span class="skn">EPC Project Management</span><span class="skp">90%</span></div><div class="skbar"><div class="skfill fg" data-w="90"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Supplier Coordination</span><span class="skp">87%</span></div><div class="skbar"><div class="skfill fb" data-w="87"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Budget & Planning</span><span class="skp">85%</span></div><div class="skbar"><div class="skfill fa" data-w="85"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Site Supervision</span><span class="skp">88%</span></div><div class="skbar"><div class="skfill fg" data-w="88"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Reporting & Documentation</span><span class="skp">86%</span></div><div class="skbar"><div class="skfill fb" data-w="86"></div></div></div>
+        <div class="sk-h" style="margin-top:22px">🌍 <span data-l="fr" class="al">Langues</span><span data-l="en">Languages</span><span data-l="de">Sprachen</span></div>
+        <div class="skr"><div class="skt"><span class="skn">Français · C1 · TCF</span><span class="skp">C1</span></div><div class="skbar"><div class="skfill fb" data-w="90"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">English · B2 · TOEIC</span><span class="skp">B2</span></div><div class="skbar"><div class="skfill fg" data-w="72"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">Deutsch · A2 · ÖSD</span><span class="skp">A2</span></div><div class="skbar"><div class="skfill fa" data-w="35"></div></div></div>
+        <div class="skr"><div class="skt"><span class="skn">العربية · Native</span><span class="skp">N</span></div><div class="skbar"><div class="skfill fb" data-w="100"></div></div></div>
       </div>
     </div>
   </div>
@@ -831,15 +2331,15 @@ BODY = f"""
     <div class="chip R" data-l="de">Ausbildung</div>
     <h2 class="T R"><span data-l="fr" class="al">Diplômes &<br><em>Reconnaissance Internationale</em></span><span data-l="en">Degrees &<br><em>International Recognition</em></span><span data-l="de">Abschlüsse &<br><em>Internationale Anerkennung</em></span></h2>
     <div class="edug">
-      <div class="ec R"><div class="ec-ic eib">🎓</div><div><div class="ec-deg" data-l="fr" style="display:block">Diplôme National d'Ingénieur<br>Génie Électrique & Automatique</div><div class="ec-deg" data-l="en">National Engineering Degree<br>Electrical Engineering & Automation</div><div class="ec-deg" data-l="de">Nationales Ingenieurdiplom<br>Elektrotechnik & Automatisierung</div><div class="ec-sch">École Nationale d'Ingénieurs de Gabès (ENIG)</div><div class="ec-yr">2016 – 2019</div><div class="ec-hon">🏅 Mention Très Bien · High Honors</div></div></div>
+      <div class="ec R"><div class="ec-ic eib">🎓</div><div><div class="ec-deg" data-l="fr" style="display:block">Diplôme National d'Ingénieur<br>Génie Électrique & Automatique</div><div class="ec-deg" data-l="en">National Engineering Degree<br>Electrical Engineering & Automation</div><div class="ec-deg" data-l="de">Nationales Ingenieurdiplom<br>Elektrotechnik & Automatisierung</div><div class="ec-sch">ENIG — École Nationale d'Ingénieurs de Gabès</div><div class="ec-yr">2016 – 2019</div><div class="ec-hon">🏅 Mention Très Bien · High Honors</div></div></div>
       <div class="ec R" style="transition-delay:.1s"><div class="ec-ic eig">⚗️</div><div><div class="ec-deg" data-l="fr" style="display:block">Classes Préparatoires<br>Physique & Chimie</div><div class="ec-deg" data-l="en">Preparatory Studies<br>Physics & Chemistry</div><div class="ec-deg" data-l="de">Vorbereitungsstudien<br>Physik & Chemie</div><div class="ec-sch">Faculté des Sciences de Tunis (FST)</div><div class="ec-yr">2013 – 2016</div></div></div>
       <div style="grid-column:span 2" class="R" style="transition-delay:.2s">
         <div class="chip" style="margin:28px 0 18px" data-l="fr" style="display:inline-flex">🌍 Reconnaissance Internationale du Diplôme</div>
         <div class="chip" style="margin:28px 0 18px" data-l="en">🌍 International Degree Recognition</div>
         <div class="chip" style="margin:28px 0 18px" data-l="de">🌍 Internationale Abschlusserkennung</div>
         <div class="recog">
-          <div class="rc"><div class="rc-flag">🇫🇷</div><div><div class="rc-t" data-l="fr" style="display:block">France — Reconnu ENIC-NARIC</div><div class="rc-t" data-l="en">France — ENIC-NARIC Recognized</div><div class="rc-t" data-l="de">Frankreich — ENIC-NARIC Anerkannt</div><div class="rc-s">Certificat de Comparabilité</div><div class="rc-b" data-l="fr" style="display:block">Équivalent Master — Éligible CDI ingénieur</div><div class="rc-b" data-l="en">Equivalent to Master's — Eligible for permanent engineering roles</div><div class="rc-b" data-l="de">Gleichwertig einem Master — Berechtigt für Festanstellungen</div></div></div>
-          <div class="rc"><div class="rc-flag">🇩🇪</div><div><div class="rc-t" data-l="fr" style="display:block">Allemagne — Évalué ZAB</div><div class="rc-t" data-l="en">Germany — ZAB Evaluated</div><div class="rc-t" data-l="de">Deutschland — ZAB Bewertet</div><div class="rc-s">Statement of Comparability</div><div class="rc-b" data-l="fr" style="display:block">Reconnaissance ZAB — Travailler en Allemagne</div><div class="rc-b" data-l="en">ZAB Statement — Recognized to work in Germany</div><div class="rc-b" data-l="de">ZAB-Aussage — Anerkannt für Deutschland</div></div></div>
+          <div class="rc"><div class="rc-flag">🇫🇷</div><div><div class="rc-t" data-l="fr" style="display:block">France — ENIC-NARIC Reconnu</div><div class="rc-t" data-l="en">France — ENIC-NARIC Recognized</div><div class="rc-t" data-l="de">Frankreich — ENIC-NARIC Anerkannt</div><div class="rc-s">Certificat de Comparabilité</div><div class="rc-b" data-l="fr" style="display:block">Master Équivalent — CDI Ingénieur</div><div class="rc-b" data-l="en">Master Equivalent — Permanent Engineering Roles</div><div class="rc-b" data-l="de">Master-Äquivalent — Ingenieurstellen</div></div></div>
+          <div class="rc"><div class="rc-flag">🇩🇪</div><div><div class="rc-t" data-l="fr" style="display:block">Allemagne — ZAB Évalué</div><div class="rc-t" data-l="en">Germany — ZAB Evaluated</div><div class="rc-t" data-l="de">Deutschland — ZAB Bewertet</div><div class="rc-s">Statement of Comparability</div><div class="rc-b" data-l="fr" style="display:block">Travailler en Allemagne</div><div class="rc-b" data-l="en">Authorized to work in Germany</div><div class="rc-b" data-l="de">Berechtigt, in Deutschland zu arbeiten</div></div></div>
         </div>
       </div>
     </div>
@@ -854,67 +2354,28 @@ BODY = f"""
     <div class="chip R" data-l="de">Lebenslauf</div>
     <div class="cvw">
       <div class="cvf R">
-        <div class="cvf-hd"><div class="cvf-dots"><div class="cd cd1"></div><div class="cd cd2"></div><div class="cd cd3"></div></div><div class="cvf-bar">📄 Radhouane_Zayoud_European_Premium_CV.pdf</div></div>
+        <div class="cvf-hd"><div class="cvf-dots"><div class="cd cd1"></div><div class="cd cd2"></div><div class="cd cd3"></div></div><div class="cvf-bar">📄 Radhouane_Zayoud_Premium_CV.pdf</div></div>
         <div class="cvf-body">
           <div class="cvhl">
-            <div class="cvh"><div class="cvh-i">⚡</div><div class="cvh-t"><strong>10 MW · Bénin</strong><span data-l="fr" class="al">Plus grand projet étudié</span><span data-l="en">Largest project studied</span><span data-l="de">Größtes Projekt</span></div></div>
-            <div class="cvh"><div class="cvh-i">🏭</div><div class="cvh-t"><strong>4×1 MW · Djerba</strong><span data-l="fr" class="al">Centrales MV utility</span><span data-l="en">MV utility-scale plants</span><span data-l="de">MV-Großanlagen</span></div></div>
-            <div class="cvh"><div class="cvh-i">🔋</div><div class="cvh-t"><strong>BESS 2×50 kW</strong><span data-l="fr" class="al">Stockage batterie Li-ion</span><span data-l="en">Li-ion battery storage</span><span data-l="de">Li-ion-Batteriespeicher</span></div></div>
-            <div class="cvh"><div class="cvh-i">🎓</div><div class="cvh-t"><strong>ENIC-NARIC · ZAB</strong><span data-l="fr" class="al">Diplôme reconnu FR & DE</span><span data-l="en">Degree recognized FR & DE</span><span data-l="de">Anerkannt FR & DE</span></div></div>
-            <div class="cvh"><div class="cvh-i">🌍</div><div class="cvh-t"><strong>50+ projets</strong><span data-l="fr" class="al">Résidentiel, Comm., Utility</span><span data-l="en">Residential, Comm., Utility</span><span data-l="de">Wohn-, Gewerbe-, Utility</span></div></div>
-            <div class="cvh"><div class="cvh-i">🏅</div><div class="cvh-t"><strong>ENIG Mention TB</strong><span data-l="fr" class="al">Diplôme Très Bien</span><span data-l="en">Graduated High Honors</span><span data-l="de">Mit Auszeichnung</span></div></div>
+            <div class="cvh"><div class="cvh-i">⚡</div><div class="cvh-t"><strong>10 MW · Bénin</strong><span data-l="fr" class="al">Plus grand projet</span><span data-l="en">Largest project</span><span data-l="de">Größtes Projekt</span></div></div>
+            <div class="cvh"><div class="cvh-i">🏭</div><div class="cvh-t"><strong>4×1 MW · Djerba</strong><span data-l="fr" class="al">Centrales MV</span><span data-l="en">Utility plants</span><span data-l="de">Großanlagen</span></div></div>
+            <div class="cvh"><div class="cvh-i">🔋</div><div class="cvh-t"><strong>2×50 kW BESS</strong><span data-l="fr" class="al">Hybride Li-ion</span><span data-l="en">Hybrid storage</span><span data-l="de">Hybrid-Speicher</span></div></div>
+            <div class="cvh"><div class="cvh-i">🎓</div><div class="cvh-t"><strong>ENIG TB</strong><span data-l="fr" class="al">ENIC & ZAB</span><span data-l="en">ENIC & ZAB</span><span data-l="de">ENIC & ZAB</span></div></div>
+            <div class="cvh"><div class="cvh-i">🌍</div><div class="cvh-t"><strong>50+ Projets</strong><span data-l="fr" class="al">Résidentiel + Utility</span><span data-l="en">Residential + Utility</span><span data-l="de">Wohn- & Großanlagen</span></div></div>
+            <div class="cvh"><div class="cvh-i">✅</div><div class="cvh-t"><strong>Disponible</strong><span data-l="fr" class="al">FR / EU / Afrique</span><span data-l="en">FR / EU / Africa</span><span data-l="de">FR / EU / Afrika</span></div></div>
           </div>
         </div>
       </div>
       <div class="R" style="transition-delay:.1s">
-        <div class="chip" data-l="fr" style="display:inline-flex">📄 Mon CV Premium</div>
-        <div class="chip" data-l="en">📄 My Premium CV</div>
-        <div class="chip" data-l="de">📄 Mein Premium-Lebenslauf</div>
-        <h3 style="font-size:1.45rem;font-weight:900;line-height:1.2;margin-bottom:14px" data-l="fr" style="display:block">Téléchargez mon CV<br><span style="color:var(--sky)">européen premium</span></h3>
-        <h3 style="font-size:1.45rem;font-weight:900;line-height:1.2;margin-bottom:14px" data-l="en">Download my<br><span style="color:var(--sky)">premium European CV</span></h3>
-        <h3 style="font-size:1.45rem;font-weight:900;line-height:1.2;margin-bottom:14px" data-l="de">Meinen<br><span style="color:var(--sky)">Premium-Lebenslauf</span> herunterladen</h3>
-        <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:0">
-          <button class="B Bg" style="justify-content:center" onclick="dlCV(event)">⬇ <span data-l="fr" class="al">Télécharger CV PDF</span><span data-l="en">Download CV PDF</span><span data-l="de">Lebenslauf herunterladen</span></button>
-          <a href="https://linkedin.com/in/radhouane-zayoud" target="_blank" class="B Bs" style="justify-content:center">🔗 LinkedIn Profile</a>
-          <a href="mailto:zayoudradhouane@gmail.com" class="B Bp" style="justify-content:center">✉️ zayoudradhouane@gmail.com</a>
-        </div>
-        <div class="cv-note">
-          <strong data-l="fr" style="display:block">💡 Mise à jour quotidienne</strong>
-          <strong data-l="en">💡 Daily Updates</strong>
-          <strong data-l="de">💡 Tägliche Aktualisierungen</strong>
-          <span data-l="fr" class="al">Glissez votre nouveau CV ci-dessous pour mettre à jour le téléchargement chaque jour.</span>
-          <span data-l="en">Drop your updated CV below to refresh the download link daily.</span>
-          <span data-l="de">Ziehen Sie Ihren aktuellen Lebenslauf nach unten, um den Download täglich zu aktualisieren.</span>
-        </div>
-        <div class="up-zone" id="cup" onclick="document.getElementById('cfi').click()" ondragover="cvDO(event)" ondragleave="cvDL(event)" ondrop="cvDrop(event)">
-          <input type="file" id="cfi" accept=".pdf,.doc,.docx" onchange="cvSel(event)">
-          <div class="up-ico">📁</div>
-          <div class="up-txt" data-l="fr" style="display:block"><strong>Mettre à jour le CV</strong><br>Cliquer ou glisser le fichier</div>
-          <div class="up-txt" data-l="en"><strong>Update CV file</strong><br>Click or drag here</div>
-          <div class="up-txt" data-l="de"><strong>Lebenslauf aktualisieren</strong><br>Klicken oder hier ziehen</div>
-          <div class="up-hint">PDF · DOC · DOCX — Max 10 MB</div>
-        </div>
-        <div class="cv-cur" id="cvc" style="display:none">
-          <span style="font-size:1.2rem">📄</span>
-          <div><div class="cv-fn" id="cfn">—</div><div class="cv-fs" id="cfs">—</div></div>
-          <button class="cv-del" onclick="cvRm()">🗑</button>
+        <div class="chip" data-l="fr" style="display:inline-flex">📄 Mon CV</div>
+        <div class="chip" data-l="en">📄 My CV</div>
+        <div class="chip" data-l="de">📄 Mein CV</div>
+        <h3 style="font-size:1.45rem;font-weight:900;line-height:1.2;margin-bottom:14px;color:var(--snow)"><span data-l="fr" class="al">Téléchargez mon<br><span style="color:var(--accent)">CV premium européen</span></span><span data-l="en">Download my<br><span style="color:var(--accent)">premium CV</span></span><span data-l="de">Laden Sie meinen<br><span style="color:var(--accent)">Premium-CV</span> herunter</span></h3>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:18px">
+          <button class="B Bg" style="justify-content:center;width:100%" onclick="dlCV(event)">⬇ <span data-l="fr" class="al">Télécharger PDF</span><span data-l="en">Download PDF</span><span data-l="de">PDF herunterladen</span></button>
+          <a href="https://linkedin.com/in/radhouane-zayoud" target="_blank" class="B Bs" style="justify-content:center;width:100%">🔗 LinkedIn Profile</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ TESTIMONIALS ══ -->
-<section id="testimonials">
-  <div class="W">
-    <div class="chip R" data-l="fr" style="display:none">Recommandations</div>
-    <div class="chip R" data-l="en">Testimonials</div>
-    <div class="chip R" data-l="de">Referenzen</div>
-    <h2 class="T R"><span data-l="fr" class="al">Ce que disent<br>mes <em>collaborateurs</em></span><span data-l="en">What my<br><em>colleagues say</em></span><span data-l="de">Was meine<br><em>Kollegen sagen</em></span></h2>
-    <div class="testg">
-      <div class="tc2 R"><div class="tc2-txt">« Radhouane a piloté nos 4 centrales MV de Djerba avec une maîtrise technique exemplaire. Sa rigueur en PVsyst, sa gestion EPC et sa réactivité ont été essentielles à notre succès. »</div><div class="tc2-auth"><div class="tc2-av">DP</div><div><div class="tc2-name">Directeur de Projet</div><div class="tc2-role">MES Distribution — Tunisie</div></div></div><div class="ph">⚠️ À remplacer par témoignage réel</div></div>
-      <div class="tc2 R" style="transition-delay:.1s"><div class="tc2-txt">"Radhouane delivered outstanding work on our 10 MW Benin feasibility study. His PVsyst modeling and technical documentation were of the highest professional standard."</div><div class="tc2-auth"><div class="tc2-av">PM</div><div><div class="tc2-name">Project Manager</div><div class="tc2-role">International Partner</div></div></div><div class="ph">⚠️ To be replaced with real testimonial</div></div>
-      <div class="tc2 R" style="transition-delay:.2s"><div class="tc2-txt">« Les études MV/LV de Radhouane pour notre installation 400 kWp ont été validées du premier coup. Son expertise BESS a optimisé notre stockage. »</div><div class="tc2-auth"><div class="tc2-av">CI</div><div><div class="tc2-name">Responsable Technique</div><div class="tc2-role">Client Industriel — Tunisie</div></div></div><div class="ph">⚠️ À remplacer par témoignage réel</div></div>
     </div>
   </div>
 </section>
@@ -925,31 +2386,27 @@ BODY = f"""
     <div class="chip R" data-l="fr" style="display:none">Contact</div>
     <div class="chip R" data-l="en">Contact</div>
     <div class="chip R" data-l="de">Kontakt</div>
-    <h2 class="T R"><span data-l="fr" class="al">Travaillons ensemble<br>sur votre <em>prochain projet</em></span><span data-l="en">Let's work together<br>on your <em>next project</em></span><span data-l="de">Gemeinsam am<br><em>nächsten Projekt</em></span></h2>
+    <h2 class="T R"><span data-l="fr" class="al">Prêt à collaborer<br>sur votre <em>prochain projet</em></span><span data-l="en">Ready to work<br>on your <em>next project</em></span><span data-l="de">Bereit für Ihr<br><em>nächstes Projekt</em></span></h2>
     <div class="ctg">
       <div class="R">
-        <p style="color:var(--slate);line-height:1.85;margin-bottom:22px" data-l="fr" style="display:block">Ouvert aux opportunités en <strong style="color:var(--snow)">France, Allemagne, Europe et Afrique</strong>. Postes visés : <strong style="color:var(--snow)">Chef de Projets PV, Solar Project Manager, PV Design Engineer</strong>.</p>
-        <p style="color:var(--slate);line-height:1.85;margin-bottom:22px" data-l="en">Open to opportunities in <strong style="color:var(--snow)">France, Germany, Europe and Africa</strong>. Target: <strong style="color:var(--snow)">Solar PV Project Manager, PV Design Engineer, RE Project Manager</strong>.</p>
-        <p style="color:var(--slate);line-height:1.85;margin-bottom:22px" data-l="de">Offen für Stellen in <strong style="color:var(--snow)">Frankreich, Deutschland, Europa und Afrika</strong>. Ziel: <strong style="color:var(--snow)">PV-Projektleiter, Planungsingenieur PV, RE Project Manager</strong>.</p>
-        <div class="cti"><div class="ct-ic">📞</div><div><div class="ct-lbl">Téléphone / Phone</div><div class="ct-val"><a href="tel:+21623781661">+216 23 781 661</a></div></div></div>
+        <p style="color:var(--slate);line-height:1.85;margin-bottom:26px" data-l="fr" style="display:block">Ingénieur PV spécialisé en <strong style="color:var(--snow)">projets Utility-Scale 50 kWp – 10 MW</strong>. Overt à <strong style="color:var(--snow)">France, Allemagne, Europe et Afrique</strong> pour rôles : <strong style="color:var(--snow)">Chef de Projets PV, Solar Project Manager, PV Design Engineer, EPC Manager</strong>.</p>
+        <p style="color:var(--slate);line-height:1.85;margin-bottom:26px" data-l="en">PV Engineer specialized in <strong style="color:var(--snow)">utility-scale projects 50 kWp – 10 MW</strong>. Open to <strong style="color:var(--snow)">France, Germany, Europe and Africa</strong> for roles: <strong style="color:var(--snow)">Solar Project Manager, PV Design Engineer, EPC Manager, RE Project Lead</strong>.</p>
+        <p style="color:var(--slate);line-height:1.85;margin-bottom:26px" data-l="de">PV-Ingenieur spezialisiert auf <strong style="color:var(--snow)">Utility-Scale-Projekte 50 kWp – 10 MW</strong>. Offen für <strong style="color:var(--snow)">Frankreich, Deutschland, Europa und Afrika</strong>: <strong style="color:var(--snow)">Projektleiter PV, Planungsingenieur, EPC Manager</strong>.</p>
+        <div class="cti"><div class="ct-ic">📞</div><div><div class="ct-lbl" data-l="fr" style="display:block">Téléphone</div><div class="ct-lbl" data-l="en">Phone</div><div class="ct-lbl" data-l="de">Telefon</div><div class="ct-val"><a href="tel:+21623781661">+216 23 781 661</a></div></div></div>
         <div class="cti"><div class="ct-ic">✉️</div><div><div class="ct-lbl">Email</div><div class="ct-val"><a href="mailto:zayoudradhouane@gmail.com">zayoudradhouane@gmail.com</a></div></div></div>
         <div class="cti"><div class="ct-ic">🔗</div><div><div class="ct-lbl">LinkedIn</div><div class="ct-val"><a href="https://linkedin.com/in/radhouane-zayoud" target="_blank">linkedin.com/in/radhouane-zayoud</a></div></div></div>
-        <div class="cti"><div class="ct-ic">📍</div><div><div class="ct-lbl" data-l="fr" style="display:block">Localisation</div><div class="ct-lbl" data-l="en">Location</div><div class="ct-lbl" data-l="de">Standort</div><div class="ct-val">Tunis, Tunisie · Mobile : FR / EU / Afrique</div></div></div>
+        <div class="cti"><div class="ct-ic">📍</div><div><div class="ct-lbl" data-l="fr" style="display:block">Localisation</div><div class="ct-lbl" data-l="en">Location</div><div class="ct-lbl" data-l="de">Standort</div><div class="ct-val">Tunis, Tunisie · <span data-l="fr" style="display:inline">Mobile France / Europe / Afrique</span><span data-l="en">Mobile France / Europe / Africa</span><span data-l="de">Mobil Frankreich / Europa / Afrika</span></div></div></div>
         <div class="avail" data-l="fr" style="display:inline-flex">Disponible immédiatement</div>
         <div class="avail" data-l="en">Available immediately</div>
         <div class="avail" data-l="de">Sofort verfügbar</div>
       </div>
       <div class="R" style="transition-delay:.1s">
         <form onsubmit="submitForm(event)">
-          <div class="frow">
-            <div class="fg2"><label data-l="fr" style="display:block">Prénom & Nom</label><label data-l="en">Full Name</label><label data-l="de">Name</label><input type="text" placeholder="Jean Dupont / Max Müller" required></div>
-            <div class="fg2"><label data-l="fr" style="display:block">Entreprise</label><label data-l="en">Company</label><label data-l="de">Unternehmen</label><input type="text" placeholder="TotalEnergies / BayWa r.e."></div>
-          </div>
           <div class="fg2"><label>Email</label><input type="email" placeholder="recrutement@company.com" required></div>
-          <div class="fg2"><label data-l="fr" style="display:block">Objet</label><label data-l="en">Subject</label><label data-l="de">Betreff</label><input type="text" placeholder="Offre Chef de Projets PV — Paris / Berlin" required></div>
+          <div class="fg2"><label data-l="fr" style="display:block">Sujet</label><label data-l="en">Subject</label><label data-l="de">Betreff</label><input type="text" placeholder="Offre Chef Projets PV · Paris" required></div>
           <div class="fg2"><label data-l="fr" style="display:block">Message</label><label data-l="en">Message</label><label data-l="de">Nachricht</label><textarea placeholder="Bonjour Radhouane..." required></textarea></div>
-          <button type="submit" class="B Bp" style="width:100%;justify-content:center">✈️ <span data-l="fr" class="al">Envoyer</span><span data-l="en">Send message</span><span data-l="de">Senden</span></button>
-          <div class="fsuc" id="fsuc">✅ <span data-l="fr" class="al">Message envoyé ! Réponse sous 24h.</span><span data-l="en">Sent! I'll reply within 24h.</span><span data-l="de">Gesendet! Antwort in 24h.</span></div>
+          <button type="submit" class="B Bp" style="width:100%;justify-content:center">✈️ <span data-l="fr" class="al">Envoyer</span><span data-l="en">Send</span><span data-l="de">Senden</span></button>
+          <div class="fsuc" id="fsuc">✅ <span data-l="fr" class="al">Envoyé ! Réponse sous 24h.</span><span data-l="en">Sent! Reply within 24h.</span><span data-l="de">Gesendet! Antwort in 24h.</span></div>
         </form>
       </div>
     </div>
@@ -968,7 +2425,61 @@ BODY = f"""
         <li><a href="https://linkedin.com/in/radhouane-zayoud" target="_blank">LinkedIn</a></li>
       </ul>
     </div>
-    <p class="ft-copy">© 2025 Radhouane Zayoud · Photovoltaic Project Engineer · Solar PV · BESS · MV/LV · Tunis, Tunisia<br>
-    <span style="opacity:.35">ENIG Mention Très Bien · ENIC-NARIC France · ZAB Germany · TCF C1 · TOEIC B2</span></p>
+    <p class="ft-copy">© 2025 Radhouane Zayoud · Photovoltaic Project Engineer · Utility-Scale PV · BESS · MV/LV Design · EPC Manager · Tunis, Tunisia<br>
+    <span style="opacity:.35">ENIG Mention Très Bien · ENIC-NARIC France · ZAB Germany · 4+ years · 10 MW · 50+ projects · Available France / Europe / Africa</span></p>
   </div>
 </footer>
+
+<a href="#hero" id="sct">↑</a>
+
+<script>
+let CL='fr';
+function setLang(l){
+  CL=l;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.remove('on'));
+  document.querySelectorAll('.lb').forEach(b=>{if(b.textContent===l.toUpperCase())b.classList.add('on')});
+  document.querySelectorAll('[data-l]').forEach(el=>{
+    const show=el.dataset.l===l;
+    el.classList.toggle('al',show);
+    if(!show){el.style.display='none';return;}
+    const cn=el.className;
+    if(el.tagName==='SPAN'||el.tagName==='STRONG'||el.tagName==='LI')el.style.display='inline';
+    else if(cn.includes('chip')||cn.includes('avail')||cn.includes('h-av')||cn.includes('pill'))el.style.display='inline-flex';
+    else el.style.display='block';
+  });
+}
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('on',scrollY>50);
+  document.getElementById('sct').classList.toggle('v',scrollY>380);
+});
+function toggleMob(){document.getElementById('mob').classList.toggle('open')}
+function closeMob(){document.getElementById('mob').classList.remove('open')}
+const ro=new IntersectionObserver(en=>{
+  en.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('v');
+      e.target.querySelectorAll('.skfill').forEach(f=>{if(f.dataset.w)f.style.width=f.dataset.w+'%'});
+    }
+  });
+},{threshold:.07,rootMargin:'0px 0px -35px 0px'});
+document.querySelectorAll('.R,.Rx,.pc,.ec,.sk-col,.tc2').forEach(el=>ro.observe(el));
+function animN(el,tgt,sfx){
+  let v=0;const inc=tgt/120;
+  const t=setInterval(()=>{v=Math.min(v+inc,tgt);el.textContent=(Number.isInteger(tgt)?Math.floor(v):v.toFixed(1))+(sfx||'');if(v>=tgt)clearInterval(t);},15);
+}
+const co=new IntersectionObserver(en=>{
+  if(en[0].isIntersecting){document.querySelectorAll('[data-c]').forEach(el=>animN(el,+el.dataset.c,el.dataset.s||'+'));co.disconnect();}
+},{threshold:.3});
+const hs=document.querySelector('.hstats');if(hs)co.observe(hs);
+function dlCV(e){
+  e&&e.preventDefault();
+  alert('CV téléchargeable | Download CV | Lebenslauf herunterladen\nEmail: zayoudradhouane@gmail.com\n+216 23 781 661');
+}
+function submitForm(e){e.preventDefault();const s=document.getElementById('fsuc');s.style.display='block';e.target.reset();setTimeout(()=>s.style.display='none',5000);}
+document.querySelectorAll('.pc').forEach((c,i)=>c.style.transitionDelay=(i*.07)+'s');
+document.querySelectorAll('.ec').forEach((c,i)=>c.style.transitionDelay=(i*.08)+'s');
+document.querySelectorAll('.sk-col').forEach((c,i)=>c.style.transitionDelay=(i*.1)+'s');
+setLang('fr');
+</script>
+</body>
+</html>
